@@ -4,13 +4,13 @@ import { Button } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 
-const Landfill = props => (
+const ChooseLitter = props => (
   <div>
-    Landfill
-    <Button component={Link} to="/start">
-      Unlock other litters!
+    Pick your litter!
+    <Button component={Link} to="/choose-method">
+      pick recycling method
     </Button>
   </div>
 );
 
-export default withStyles(styles)(Landfill);
+export default withStyles(styles)(ChooseLitter);
