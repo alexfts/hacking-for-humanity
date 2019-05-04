@@ -5,7 +5,7 @@ import { Button } from '@material-ui/core';
 const Home = props => (
   <div>
     Home page!
-    <Button aria-label="Select your trash" component={Link} to="/start">
+    <Button aria-label="Select your trash" component={Link} to="/choose-method">
       Start
     </Button>
   </div>
