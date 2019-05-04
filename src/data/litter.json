@@ -4,7 +4,12 @@
             "recycled": [
                 "Recycled aluminum is shipped to the Alcan smelter in Kitimat, BC where it is made into new pop cans and other household aluminum products.",
                 "End Uses: 'New' aluminum products"
-            ]
+            ],
+            "landfill": [
+                "Recycling aluminum saves 90-95 percent of the energy needed to make aluminum from scratch",
+                "There is no limit to how many times aluminum can be recycled. That's why recycling aluminum is such a boom for the environment. Aluminum is considered a sustainable metal, which means it can be recycled again and again with no loss of material."
+            ],
+            "url": "/aluminum.png"
         },
         "Compost": {
             "recycled": [
@@ -12,27 +17,90 @@
                 "Within a day or two, the waste is moved to an active compost yard",
                 "Pipes running underneath the compost pile pull oxygen down and push it through a bio-filter to remove odour from the air. Microbes and all the biology will generate steam from the pile just like when you’re exercising and you generate heat. The more active they are, the more heat they generate.",
                 "Some of the green waste is used to generate electricity. Truckloads of pure food scraps are fed into the bio-gas generator that produces enough energy to power 900 homes."
-            ]
+            ],
+            "landfill": [
+                "Compost that is buried in a landfill won’t be able to receive oxygen. Instead, it’ll undergo anaerobic decomposition which will produce methane gas. In an aerobic environment, living organisms such as worms can break it down and produce CO2 instead of methane."    
+            ],
+            "url": "/compostable.png"
         },
         "Paper": {
-            "recycled": {
-                "Office Paper": [
-                    "Like newsprint, office paper goes through the pulping process. It is turned back into office paper for use in printers, photocopiers, etc. Office paper is also used as recycled content in toilet and tissue paper.",
-                    "End Uses: 'New' office paper, toilet paper, tissue paper"
-                ]
-            }
+            "recycled": [
+                "Office Paper:",
+                "Like newsprint, office paper goes through the pulping process. It is turned back into office paper for use in printers, photocopiers, etc. Office paper is also used as recycled content in toilet and tissue paper.",
+                "End Uses: 'New' office paper, toilet paper, tissue paper",
+                "Mixed Paper:",
+                "Mixed paper is shipped to Vancouver, BC or Tacoma, WA for processing",
+                "End Uses: Boxboard, duroid shingles, Gyproc paper, cardboard liners",
+                "Cardboard:",
+                "Corrugated cardboard is baled and shipped to processing plants in Vancouver, BC and Tacoma, WA. Recycled cardboard is turned back into 'new' cardboard.",
+                "End Uses: Cardboard boxes, boxboard for cereal boxes, paper rolls"
+            ],
+            "landfill": [
+                "Recycling aluminum saves 90-95 percent of the energy needed to make aluminum from scratch",
+                "There is no limit to how many times aluminum can be recycled. That's why recycling aluminum is such a boom for the environment. Aluminum is considered a sustainable metal, which means it can be recycled again and again with no loss of material."
+            ],
+            "url": "words"
         },
         "Plastics": {
-
-        },
-        "Polystyrene": {
-
+            "recycled": [
+                "The material to be recycled is shipped to the plant and inspected to remove contaminants like paper and food.",
+                "Sorting separates clean material from soiled waste that will need washing.",
+                "The waste is fed into a grinder where it is processed into 'fluff'. Any EPS that is not already clean is washed and dried.",
+                "Heat and friction are used to melt the fluff, removing all the air.",
+                "The melted material is pushed under pressure into a die with small openings and extruded as strands of polystyrene, which are cooled with water and chopped into pellets.",
+                "The pellets are shipped to manufacturers to be used in everything from toys to sun visors to building insulation."
+            ],
+            "landfill": [
+                "Normally, it takes 2-6 weeks in a landfill to get completely decomposed. If we recycle paper items, we can easily save a lot of landfill space, while reducing the energy and virgin material requirements of making non-recycled paper."    
+            ],
+            "url": "words"
         },
         "Glass": {
-
+            "recycled":[
+                "The consumer throws glass into a recycle bin.",
+                "Glass is taken from the bin and taken to a glass treatment plant.",
+                "The glass is sorted by colour and washed to remove any impurities.",
+                "The glass is then crushed and melted, then moulded into new products such as bottles and jars. Or it may be used for alternative purposes such as brick manufacture or decorative uses.",
+                "The glass is then sent back to the shops ready to be used again.",
+                "Glass does not degrade through the recycling process, so it can be recycled again and again."
+            ],
+            "landfill": [
+                "Glass takes [instert] to biodegrade"    
+            ],
+            "url": "words"
+        },
+        "Polystyrene": {
+            "recycled": [
+                "The material to be recycled is shipped to the plant and inspected to remove contaminants like paper and food.",
+                "Sorting separates clean material from soiled waste that will need washing.",
+                "The waste is fed into a grinder where it is processed into 'fluff.' Any EPS that is not already clean is washed and dried.",
+                "Heat and friction are used to melt the fluff, removing all the air.",
+                "The melted material is pushed under pressure into a die with small openings and extruded as strands of polystyrene, which are cooled with water and chopped into pellets.",
+                "The pellets are shipped to manufacturers to be used in everything from toys to sun visors to building insulation."
+            ],
+            "landfill": [
+                "Recycling aluminum saves 90-95 percent of the energy needed to make aluminum from scratch",
+                "There is no limit to how many times aluminum can be recycled. That's why recycling aluminum is such a boom for the environment. Aluminum is considered a sustainable metal, which means it can be recycled again and again with no loss of material."
+            ],
+            "url": "words"
         },
         "Soft Plastics": {
-
+            "recycled":[
+                "In the very beginning, the used plastic bags piled up in tonnes in the warehouses travel on a conveyor belt where workers hand-remove contaminants not meant to be recycled.",
+                "Then, the bags are washed in flood tanks and go through magnets. In the flood tanks, all forms of non metallic contaminants including sticky substances such as syrups are removed and the magnets fitted next to the conveyor belts remove metallic impurities.",
+                "In the next phase, the plastic belts are melted for separating any remaining contaminant from the resins. It happens so because all compounds on earth have separate melting points and impurities that still remain solid in the resin are removed.",
+                "At this point, the melted plastic compound is dried and chopped into pellets.",
+                "The pellets go through a second round of wash away flood tanks and magnets for removing more metallic and non metallic extrusions.",
+                "The pellets are then finely chopped into snowy looking pieces of consistent size. The oversized ones are filtered out and sent down to the beginning of the recycling process.",
+                "The snowy pieces are melted at a temperature of 450 degree centigrade to remove moistures and any remaining extrusion is also sieved out.",
+                "In the end, the melted plastic resin is cooled down, then dried and chopped into pellets, which are then sent to the plastic-bag manufacturing units.",
+                "End Uses: recycled plastic bags and wraps can made into plastic lumber that is used to make park benches, backyard decks and fences – even playground equipment. They also can be recycled into new plastic bags – and then recycled again."
+            ],
+            "landfill": [
+                "Recycling aluminum saves 90-95 percent of the energy needed to make aluminum from scratch",
+                "There is no limit to how many times aluminum can be recycled. That's why recycling aluminum is such a boom for the environment. Aluminum is considered a sustainable metal, which means it can be recycled again and again with no loss of material."
+            ],
+            "url": "words"
         }
     }
 }
