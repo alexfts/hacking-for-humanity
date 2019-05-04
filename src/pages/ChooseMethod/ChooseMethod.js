@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
+import styles from './styles';
 
 const ChooseMethod = props => (
   <div>
@@ -17,4 +19,4 @@ const ChooseMethod = props => (
   </div>
 );
 
-export default ChooseMethod;
+export default withStyles(styles)(ChooseMethod);

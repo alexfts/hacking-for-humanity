@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
+import styles from './styles';
 
 const Recycling = props => (
   <div>
@@ -11,4 +13,4 @@ const Recycling = props => (
   </div>
 );
 
-export default Recycling;
+export default withStyles(styles)(Recycling);

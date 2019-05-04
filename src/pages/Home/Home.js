@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
+import styles from './styles';
 
 const Home = props => (
   <div>
@@ -11,4 +13,4 @@ const Home = props => (
   </div>
 );
 
-export default Home;
+export default withStyles(styles)(Home);
