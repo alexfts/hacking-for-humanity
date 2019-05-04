@@ -1,16 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from '@material-ui/core';
+import { Button, Grid, ButtonBase } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
+import LitterButton from '../../components/LitterButton';
 
-const ChooseLitter = props => (
-  <div>
-    Pick your litter!
-    <Button component={Link} to="/choose-method">
-      pick recycling method
-    </Button>
-  </div>
-);
+const ChooseLitter = props => {
+  return (
+    <div>
+      Pick your litter!
+      <Grid container background-color="secondary">
+        <Grid item>
+          <LitterButton />
+        </Grid>
+        <Grid item>
+          <LitterButton />
+        </Grid>
+      </Grid>
+    </div>
+  );
+};
 
 export default withStyles(styles)(ChooseLitter);
