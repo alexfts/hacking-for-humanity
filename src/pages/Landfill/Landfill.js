@@ -8,7 +8,10 @@ const Landfill = props => (
   <div>
     Landfill
     <Button component={Link} to="/start">
-      Unlock other litters!
+      Choose another litters!
+    </Button>
+    <Button component={Link} to="/method">
+      Select another method!
     </Button>
   </div>
 );
