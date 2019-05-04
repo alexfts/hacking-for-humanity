@@ -25,6 +25,8 @@ const LitterButton = ({ classes }) => {
         style={{
           width: image.width
         }}
+        component={Link}
+        to="/choose-method"
       >
         <span
           className={classes.imageSrc}
