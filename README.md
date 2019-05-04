@@ -1,4 +1,4 @@
-# Follow the journey of your trash!
+# Follow the journey of your trash! 🥫🍌🥛📰🥡
 
 ### `npm start`
 
