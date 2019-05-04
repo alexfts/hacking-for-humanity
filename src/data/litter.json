@@ -1,12 +1,37 @@
 {
     "litter": {
         "Aluminum": {
-
+            "recycled": [
+                "Recycled aluminum is shipped to the Alcan smelter in Kitimat, BC where it is made into new pop cans and other household aluminum products.",
+                "End Uses: 'New' aluminum products"
+            ]
         },
         "Compost": {
-
+            "recycled": [
+                "Before loads go to the compost yard, pickers have to sort through them, looking for items that don’t belong — mostly plastic bags, even the ones that say they are biodegradable.",
+                "Within a day or two, the waste is moved to an active compost yard",
+                "Pipes running underneath the compost pile pull oxygen down and push it through a bio-filter to remove odour from the air. Microbes and all the biology will generate steam from the pile just like when you’re exercising and you generate heat. The more active they are, the more heat they generate.",
+                "Some of the green waste is used to generate electricity. Truckloads of pure food scraps are fed into the bio-gas generator that produces enough energy to power 900 homes."
+            ]
         },
         "Paper": {
+            "recycled": {
+                "Office Paper": [
+                    "Like newsprint, office paper goes through the pulping process. It is turned back into office paper for use in printers, photocopiers, etc. Office paper is also used as recycled content in toilet and tissue paper.",
+                    "End Uses: 'New' office paper, toilet paper, tissue paper"
+                ]
+            }
+        },
+        "Plastics": {
+
+        },
+        "Polystyrene": {
+
+        },
+        "Glass": {
+
+        },
+        "Soft Plastics": {
 
         }
     }
