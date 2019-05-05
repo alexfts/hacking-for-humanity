@@ -20,20 +20,36 @@ const tutorialSteps = [
       'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60'
   },
   {
-    label: 'Bird',
+    label: 'The mixed metals (aluminum and steel cans) are taken to a materials recovery facility where they are cleaned, sorted into different metal streams and later compressed into bales.',
     imgPath:
       'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60'
   },
   {
-    label: 'Bali, Indonesia',
+    label: 'The aluminum blocks bales are later transported to a processing plant. The blocks are then put onto a conveyor that transports them to the shredder. The shredder then cuts the cans into tiny pieces.',
     imgPath:
       'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80'
   },
   {
-    label: "Congratulations! You're a hero!",
+    label: "The aluminum shreds then are taken by the conveyor system into a specialized decoater.",
+    imgPath:
+      'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60'
+  },
+  {
+  label: "After this, they are taken to a holding furnace where they are melted down.",
+    imgPath:
+      'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60'
+  },
+  {
+    label: 'The finished ingots are then lifted by an overhead careen from the casting pit. The ingots are then loaded onto queue waiting track to be transported and dispatched to the rolling mill. The ingots are then rolled out making thin sheets of aluminum.',
+    imgPath:
+      'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60'
+  },
+  {
+    label: 'They are then repurposed into new Aluminum products',
     imgPath:
       'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60'
   }
+
 ];
 
 class TextMobileStepper extends React.Component {
@@ -60,7 +76,7 @@ class TextMobileStepper extends React.Component {
 
     return (
       <div className={classes.root}>
-        <Paper square elevation={0} className={classes.header}>
+        <Paper square elevation={0} className={classes.title}>
           <Typography>{tutorialSteps[activeStep].label}</Typography>
         </Paper>
 

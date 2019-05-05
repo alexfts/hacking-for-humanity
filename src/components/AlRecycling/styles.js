@@ -10,6 +10,22 @@ const styles = theme => ({
     paddingLeft: theme.spacing.unit * 4,
     backgroundColor: theme.palette.background.default
   },
+  title: {
+    textAlign: "center", 
+    color: theme.palette.primary.dark
+  },
+  factContainer: {
+    height: "100vh",
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    textAlign: "center",
+    justifyContent: "center"
+  },
+  fact: {
+    width: "50%",
+    margin: "20px auto",
+  },
   img: {
     overflow: 'hidden',
     display: 'block',
