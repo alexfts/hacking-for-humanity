@@ -14,13 +14,6 @@ const styles = theme => ({
   },
   headline: {
     weight: 700
-  },
-  script: {
-    width: 100,
-    height: 300,
-    background: 'black',
-    margin: 5,
-    willChange: 'transform'
   }
 });
 
