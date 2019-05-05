@@ -2,9 +2,9 @@ const styles = theme => ({
   root: {
     display: 'flex',
     flexWrap: 'wrap',
-    minWidth: 300,
-    width: '100%',
-    borderRadius: 150,
+    width: '200px',
+    height: '200px',
+    borderRadius: '50%',
     overflow: 'hidden'
   },
   image: {
@@ -20,9 +20,13 @@ const styles = theme => ({
         opacity: 0.15
       },
       '& $imageTitle': {
-        display: 'block',
+        display: 'flex',
         border: '4px solid currentColor',
-        borderRadius: 50
+        borderRadius: '50%',
+        height: '100%',
+        width: '100%',
+        justifyContent: 'center',
+        alignItems: 'center'
       }
     }
   },
@@ -59,9 +63,7 @@ const styles = theme => ({
   },
   imageTitle: {
     display: 'none',
-    position: 'relative',
-    padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 4}px ${theme
-      .spacing.unit + 6}px`
+    position: 'relative'
   }
 });
 

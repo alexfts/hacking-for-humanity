@@ -91,7 +91,7 @@ const Home = ({ classes }) => {
           component={Link}
           to="/choose-litter"
           color="secondary"
-          style={{ marginTop: 275 }}
+          style={{ marginTop: 275, zIndex: 999 }}
         >
           Start
         </Button>

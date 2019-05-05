@@ -18,7 +18,10 @@ const LitterButton = ({ classes, litter, name }) => {
         className={classes.image}
         focusVisibleClassName={classes.focusVisible}
         style={{
-          width: '100%'
+          // width: '100%'
+          width: '200px',
+          height: '200px',
+          borderRadius: '50%'
         }}
         component={Link}
         to={{

@@ -12,7 +12,7 @@ const unlockNewItem = () => {
   localStorage.setItem('unlockedItems', [...unlockedItems, newItemName]);
 };
 
-const Recycling = ({ location }) => {
+const Recycling = ({ location, classes }) => {
   if (localStorage.getItem('unlockedItems') === null) {
     localStorage.setItem('unlockedItems', ['Aluminum']);
   }
