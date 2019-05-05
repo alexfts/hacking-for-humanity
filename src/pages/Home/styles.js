@@ -12,11 +12,10 @@ const styles = theme => ({
     }
   },
   headline: {
-    weight: 700
-  },
-  ocean: {},
-  wave1: {},
-  wave2: {}
+    weight: 700,
+    color: theme.palette.primary.dark,
+    fontFamily: 'Sofia, cursive'
+  }
 });
 
 export default styles;

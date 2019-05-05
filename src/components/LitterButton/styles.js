@@ -19,11 +19,9 @@ const styles = theme => ({
       '& $imageBackdrop': {
         opacity: 0.15
       },
-      '& $imageMarked': {
-        opacity: 0
-      },
       '& $imageTitle': {
-        border: '4px solid currentColor'
+        border: '4px solid currentColor',
+        borderRadius: 50
       }
     }
   },
@@ -62,15 +60,6 @@ const styles = theme => ({
     position: 'relative',
     padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 4}px ${theme
       .spacing.unit + 6}px`
-  },
-  imageMarked: {
-    height: 3,
-    width: 18,
-    backgroundColor: theme.palette.common.white,
-    position: 'absolute',
-    bottom: -2,
-    left: 'calc(50% - 9px)',
-    transition: theme.transitions.create('opacity')
   }
 });
 
