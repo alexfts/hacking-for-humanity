@@ -1,26 +1,18 @@
 {
-  "facts": {
-    "Aluminum": [
+  "facts": [
       "Recycling ONE aluminum can saves enough energy to run your television for THREE hours.",
-      "Bauxite ore is mined to create aluminum. The mining causes deforestation, erosion, polluted water sources and a threat to animal life. Recycle your aluminum cans!"
-    ],
-    "Compost": [
+      "Bauxite ore is mined to create aluminum. The mining causes deforestation, erosion, polluted water sources and a threat to animal life. Recycle your aluminum cans!",
       "No plastics are compostable, not even biodegradable ones!",
       "Food waste in a plastic bag will not be composted. It’ll get thrown out into the trash.",
       "Some of the green waste is used to generate electricity. Tons of pure food scraps are fed into the bio-gas generator that produces enough energy to power 900 homes.",
-      "Any paper product with food stains it can be composted."
-    ],
-    "Paper": [
+      "Any paper product with food stains it can be composted.",
       "You can re-use your paper bags for compost! Only 20% of paper bags get recycled.",
       "Most coffee shops in Vancouver (Matchstick, Starbucks, etc.) will give you a discount if you bring in a reusable cup from home.",
-      "Did you know that cups can’t be composted in Vancouver? Start bringing a reusable cup!"
-    ],
-    "Plastics": [
+      "Did you know that cups can’t be composted in Vancouver? Start bringing a reusable cup!",
       "Did you know you can get fabric lined with beeswax to cover your food containers instead of cling wrap? There are a lot of many patterns and designs available, or you can even make your own!",
       "Plastic bags are among the most common sources of marine debris, where they can be mistaken as food by birds and fish.",
       "Recycling 450,000 bags plastic bags will save 11 barrels of oil. Don't forget your reuseable bags at home!",
       "Plastic bags don’t biodegrade, meaning it will take hundreds of years for them to decompose in a landfill.",
       "Plastic bags are among the most common sources of marine debris, where they can be mistaken as food by birds and fish."
-    ]
-  }
+  ]
 }
