@@ -4,6 +4,7 @@ import { Button } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import litterData from '../../data/litter.json';
 import styles from './styles';
+import AlRecycling from '../../components/AlRecycling';
 
 const unlockNewItem = () => {
   const unlockedItems = localStorage.getItem('unlockedItems').split(',');
@@ -32,9 +33,10 @@ const Recycling = ({ location }) => {
   return (
     <div>
       Recycling
-      <Button component={Link} to="/start">
+      {name === 'Aluminum' ? <AlRecycling /> : null}
+      {/* <Button component={Link} to="/start">
         Unlock other litters!
-      </Button>
+      </Button> */}
     </div>
   );
 };
