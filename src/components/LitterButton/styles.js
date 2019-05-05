@@ -3,7 +3,9 @@ const styles = theme => ({
     display: 'flex',
     flexWrap: 'wrap',
     minWidth: 300,
-    width: '100%'
+    width: '100%',
+    borderRadius: 150,
+    overflow: 'hidden'
   },
   image: {
     position: 'relative',

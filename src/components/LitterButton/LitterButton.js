@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button, ButtonBase, Typography } from '@material-ui/core';
+import { ButtonBase, Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 
@@ -30,7 +30,11 @@ const LitterButton = ({ classes, litter, name }) => {
         <span
           className={classes.imageSrc}
           style={{
-            backgroundImage: `url(${litter.url})`
+            backgroundImage: `url(${litter.url})`,
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'contain',
+            margin: '25px'
           }}
         />
         <span className={classes.imageBackdrop} />
