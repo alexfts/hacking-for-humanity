@@ -19,7 +19,8 @@ const tutorialSteps = [
       'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60'
   },
   {
-    label: 'Bird',
+    label:
+      'Bauxite ore is mined to create aluminum. The mining causes deforestation, erosion, polluted water sources and a threat to animal life. Recycle your aluminum cans!',
     imgPath:
       'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60'
   },
