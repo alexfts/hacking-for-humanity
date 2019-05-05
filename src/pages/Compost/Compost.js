@@ -34,8 +34,8 @@ const Compost = ({ location, classes }) => {
   return (
     <div  className={classes.factContainer}>
       <h2 className={classes.title}>Compost</h2>
-      <p>
-        If you compost Aluminum, it's the same as throwing it away. 
+      <p className={classes.fact}>
+        If you compost this, it's the same as throwing it away. During the composting process, items are sorted, and everything non-compostable is sent to the landfill.
       </p>
       <p><Frown/></p>
       <Button className={classes.title} component={Link} to="/landfill" width="50vw">
