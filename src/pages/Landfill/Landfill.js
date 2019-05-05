@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import litterData from '../../data/litter.json';
 import styles from './styles';
@@ -40,7 +40,9 @@ const Landfill = ({ classes, location }) => {
 
   return (
     <div className={classes.landfill}>
-      <h2 className={classes.title}>Landfill</h2>
+      <Typography variant="h2" gutterBottom className={classes.title}>
+        Landfill
+      </Typography>
       {name === 'Aluminum' ? <AlLandfill /> : null}
     </div>
   );
