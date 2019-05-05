@@ -52,7 +52,7 @@ const styles = theme => ({
     justifyContent: 'center',
     alignItems: 'center',
     position: 'absolute',
-    bottom: '40%',
+    bottom: '30%',
     width: '100%'
   },
   buttonEnd: {

@@ -8,9 +8,11 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
+import Star from '@material-ui/icons/Stars';
 import SwipeableViews from 'react-swipeable-views';
 
 import styles from './styles';
+import { Snackbar, SnackbarContent } from '@material-ui/core';
 
 const tutorialSteps = [
   {
@@ -51,7 +53,7 @@ class TextMobileStepper extends React.Component {
     const { classes, theme } = this.props;
     const { activeStep } = this.state;
     const maxSteps = tutorialSteps.length;
-
+    console.log(activeStep);
     return (
       <div className={classes.root}>
         <Paper square elevation={0} className={classes.header}>
@@ -79,18 +81,45 @@ class TextMobileStepper extends React.Component {
           ))}
         </SwipeableViews>
 
-        {activeStep === 3 ? (
-          <div className={classes.buttonContainer}>
-            <Button
-              variant="outlined"
-              color="primary"
-              component={Link}
-              to="/choose-litter"
-              className={classes.buttonEnd}
+        {activeStep === 2 ? (
+          <>
+            <div className={classes.buttonContainer}>
+              <Button
+                variant="outlined"
+                color="primary"
+                component={Link}
+                to="/choose-litter"
+                className={classes.buttonEnd}
+              >
+                Return to Litter
+              </Button>
+            </div>
+            <Snackbar
+              anchorOrigin={{
+                vertical: 'top',
+                horizontal: 'right'
+              }}
+              open={true}
+              autoHideDuration={6000}
             >
-              Return to Litter
-            </Button>
-          </div>
+              <SnackbarContent
+                message={
+                  <span
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    }}
+                  >
+                    <Star />
+                    &nbsp;
+                    {'New Item Unlocked!'}
+                  </span>
+                }
+                style={{ backgroundColor: '#daffef', color: '#242038' }}
+              />
+            </Snackbar>
+          </>
         ) : null}
 
         <MobileStepper
