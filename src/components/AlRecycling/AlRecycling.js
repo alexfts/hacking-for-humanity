@@ -60,7 +60,7 @@ class TextMobileStepper extends React.Component {
     return (
       <div className={classes.root}>
         <Paper square elevation={0} className={classes.header}>
-          <Typography className={classes.label} variant="h6">
+          <Typography className={classes.label} variant="h4">
             {tutorialSteps[activeStep].label}
           </Typography>
         </Paper>
@@ -87,13 +87,13 @@ class TextMobileStepper extends React.Component {
         {activeStep === 3 ? (
           <div className={classes.buttonContainer}>
             <Button
-              variant="contained"
+              variant="outlined"
               color="primary"
               component={Link}
               to="/choose-litter"
               className={classes.buttonEnd}
             >
-              Back to Litter
+              Return to Litter
             </Button>
           </div>
         ) : null}
@@ -107,6 +107,8 @@ class TextMobileStepper extends React.Component {
           className={classes.mobileStepper}
           nextButton={
             <Button
+              variant="contained"
+              color="secondary"
               className={classes.stepBtn}
               size="large"
               onClick={this.handleNext}
@@ -122,6 +124,8 @@ class TextMobileStepper extends React.Component {
           }
           backButton={
             <Button
+              variant="contained"
+              color="secondary"
               className={classes.stepBtn}
               size="large"
               onClick={this.handleBack}

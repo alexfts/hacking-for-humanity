@@ -39,10 +39,12 @@ const styles = theme => ({
     right: 0,
     bottom: '5%',
     width: '80%'
+    // padding: theme.spacing.unit * 5
   },
   stepBtn: {
     color: '#fff',
-    textShadow: '1px 1px 2px #353535'
+    fontWeight: 700
+    // textShadow: '1px 1px 2px #353535'
   },
 
   buttonContainer: {
@@ -54,8 +56,10 @@ const styles = theme => ({
     width: '100%'
   },
   buttonEnd: {
-    color: '#fff',
-    margin: '0 -10px'
+    // color: '#fff',
+    // margin: '0 -10px'
+    margin: theme.spacing.unit,
+    fontWeight: 700
   }
 });
 

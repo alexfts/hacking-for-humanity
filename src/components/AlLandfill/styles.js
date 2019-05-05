@@ -42,8 +42,8 @@ const styles = theme => ({
     left: 0,
     right: 0,
     bottom: '5%',
-    width: '80%',
-    padding: theme.spacing.unit * 5
+    width: '80%'
+    // padding: theme.spacing.unit * 5
   },
   stepBtn: {
     color: '#fff',
