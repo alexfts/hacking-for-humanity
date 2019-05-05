@@ -9,11 +9,9 @@ import {
 } from '@material-ui/core';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
-import styles from './styles';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
-
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+import styles from './styles';
 
 const tutorialSteps = [
   {
@@ -42,27 +40,6 @@ const tutorialSteps = [
       'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60'
   }
 ];
-
-const styles = theme => ({
-  root: {
-    maxWidth: 400,
-    flexGrow: 1
-  },
-  header: {
-    display: 'flex',
-    alignItems: 'center',
-    height: 50,
-    paddingLeft: theme.spacing.unit * 4,
-    backgroundColor: theme.palette.background.default
-  },
-  img: {
-    height: 255,
-    display: 'block',
-    maxWidth: 400,
-    overflow: 'hidden',
-    width: '100%'
-  }
-});
 
 class SwipeableTextMobileStepper extends React.Component {
   state = {
@@ -95,7 +72,7 @@ class SwipeableTextMobileStepper extends React.Component {
         <Paper square elevation={0} className={classes.header}>
           <Typography>{tutorialSteps[activeStep].label}</Typography>
         </Paper>
-        <AutoPlaySwipeableViews
+        {/* <AutoPlaySwipeableViews
           axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
           index={activeStep}
           onChangeIndex={this.handleStepChange}
@@ -112,7 +89,7 @@ class SwipeableTextMobileStepper extends React.Component {
               ) : null}
             </div>
           ))}
-        </AutoPlaySwipeableViews>
+        </AutoPlaySwipeableViews> */}
 
         <MobileStepper
           variant="progress"

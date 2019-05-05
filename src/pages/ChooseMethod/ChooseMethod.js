@@ -4,19 +4,56 @@ import { Button } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 
-const ChooseMethod = props => (
-  <div>
-    Where would you put the trash?
-    <Button component={Link} to="/landfill">
-      trash
-    </Button>
-    <Button component={Link} to="/compost">
-      Compost
-    </Button>
-    <Button component={Link} to="/recycling">
-      Recycling
-    </Button>
-  </div>
-);
+const ChooseMethod = ({ location }) => {
+  if (localStorage.getItem('unlockedItems') === null) {
+    localStorage.setItem('unlockedItems', ['Aluminum', 'Compost', 'Paper']);
+  }
+  const litter = location.state && location.state.litter;
+  const name = location.state && location.state.name;
+  return (
+    <div>
+      Where would you put the trash?
+      <Button
+        component={Link}
+        to={{
+          pathname: '/landfill',
+          state: {
+            litter: litter,
+            name: name,
+            method: 'landfill'
+          }
+        }}
+      >
+        trash
+      </Button>
+      <Button
+        component={Link}
+        to={{
+          pathname: '/compost',
+          state: {
+            litter: litter,
+            name: name,
+            method: 'compost'
+          }
+        }}
+      >
+        Compost
+      </Button>
+      <Button
+        component={Link}
+        to={{
+          pathname: '/recycling',
+          state: {
+            litter: litter,
+            name: name,
+            method: 'recycling'
+          }
+        }}
+      >
+        Recycling
+      </Button>
+    </div>
+  );
+};
 
 export default withStyles(styles)(ChooseMethod);

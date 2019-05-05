@@ -4,13 +4,17 @@ import { Button } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 
-const Recycling = props => (
-  <div>
-    Recycling
-    <Button component={Link} to="/start">
-      Unlock other litters!
-    </Button>
-  </div>
-);
+const Recycling = ({ location }) => {
+  const litter = location.state && location.state.litter;
+  const name = location.state && location.state.name;
+  return (
+    <div>
+      Recycling
+      <Button component={Link} to="/start">
+        Unlock other litters!
+      </Button>
+    </div>
+  );
+};
 
 export default withStyles(styles)(Recycling);
