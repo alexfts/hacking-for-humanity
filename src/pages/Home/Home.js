@@ -70,6 +70,10 @@ const Home = ({ classes }) => {
           Start
         </Button>
       </Grid>
+      <div class="ocean">
+        <div class="wave" />
+        <div class="wave" />
+      </div>
     </Grid>
   );
 };

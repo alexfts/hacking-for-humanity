@@ -13,7 +13,10 @@ const styles = theme => ({
   },
   headline: {
     weight: 700
-  }
+  },
+  ocean: {},
+  wave1: {},
+  wave2: {}
 });
 
 export default styles;

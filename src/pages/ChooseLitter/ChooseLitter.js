@@ -17,7 +17,6 @@ const ChooseLitter = function({ classes }) {
       direction="row"
       alignItems="center"
       justify="center"
-      // background-color="secondary"
       className={classes.container}
     >
       <Grid item xs={12} sm={12} md={4} className={classes.item}>
