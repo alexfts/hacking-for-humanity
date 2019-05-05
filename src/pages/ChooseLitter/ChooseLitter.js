@@ -4,20 +4,19 @@ import { Button, Grid, ButtonBase } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 import LitterButton from '../../components/LitterButton';
+import litterData from '../../data/litter.json';
 
-const ChooseLitter = props => {
+const ChooseLitter = function(props) {
+  const litterStorage = litterData.litter;
+  const litterNames = Object.keys(litterStorage);
   return (
-    <div>
-      Pick your litter!
-      <Grid container background-color="secondary">
-        <Grid item>
-          <LitterButton />
+    <Grid container background-color="secondary">
+      {litterNames.map(name => (
+        <Grid item key={name}>
+          <LitterButton litter={litterStorage[name]} name={name} />
         </Grid>
-        <Grid item>
-          <LitterButton />
-        </Grid>
-      </Grid>
-    </div>
+      ))}
+    </Grid>
   );
 };
 
