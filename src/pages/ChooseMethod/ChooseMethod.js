@@ -26,11 +26,11 @@ const ChooseMethod = ({ classes, location }) => {
           <CardActionArea
             component={Link}
             to={{
-              pathname: '/landfill',
+              pathname: '/funfacts',
               state: {
                 litter: litter,
                 name: name,
-                method: 'landfill'
+                pathname: '/landfill'
               }
             }}
           >
@@ -55,11 +55,11 @@ const ChooseMethod = ({ classes, location }) => {
             variant="contained"
             component={Link}
             to={{
-              pathname: '/compost',
+              pathname: '/funfacts',
               state: {
                 litter: litter,
                 name: name,
-                method: 'compost'
+                pathname: '/compost'
               }
             }}
           >
@@ -84,11 +84,11 @@ const ChooseMethod = ({ classes, location }) => {
             variant="contained"
             component={Link}
             to={{
-              pathname: '/recycling',
+              pathname: '/funfacts',
               state: {
                 litter: litter,
                 name: name,
-                method: 'recycling'
+                pathname: '/recycling'
               }
             }}
           >
@@ -107,47 +107,6 @@ const ChooseMethod = ({ classes, location }) => {
           </CardActionArea>
         </Card>
       </div>
-      {/* <div>
-      <Button
-        component={Link}
-        to={{
-          pathname: '/funfacts',
-          state: {
-            litter: litter,
-            name: name,
-            pathname: '/landfill'
-          }
-        }}
-      >
-        trash
-      </Button>
-      <Button
-        component={Link}
-        to={{
-          pathname: '/funfacts',
-          state: {
-            litter: litter,
-            name: name,
-            pathname: '/compost'
-          }
-        }}
-      >
-        Compost
-      </Button>
-      <Button
-        component={Link}
-        to={{
-          pathname: '/funfacts',
-          state: {
-            litter: litter,
-            name: name,
-            pathname: '/recycling'
-          }
-        }}
-      >
-        Recycling
-      </Button>
-    </div> */}
     </div>
   );
 };
