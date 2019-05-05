@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
-import { withStyles, Grid, Typography, Grow, Slide } from '@material-ui/core';
+import {
+  withStyles,
+  Grid,
+  Typography,
+  Grow,
+  Slide,
+  Modal
+} from '@material-ui/core';
 
 import litterData from '../../data/litter.json';
 import LitterButton from '../../components/LitterButton';
