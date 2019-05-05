@@ -50,7 +50,7 @@ const LitterButton = ({ classes, litter, name }) => {
           <Typography
             component="span"
             variant="h5"
-            color="inherit"
+            color="primary"
             className={classes.imageTitle}
           >
             {name}

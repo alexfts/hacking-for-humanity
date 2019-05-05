@@ -35,7 +35,7 @@ const ChooseLitter = function({ classes }) {
           style={{ transformOrigin: '0 0 0' }}
           {...(litterState ? { timeout: 1700 } : {})}
         >
-          <Grid item xs={12} sm={12} md={4} className={classes.item}>
+          <Grid item xs={12} sm={12} md={3} className={classes.item}>
             <LitterButton litter={litterStorage[name]} name={name} />
           </Grid>
         </Grow>

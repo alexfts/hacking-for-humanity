@@ -17,7 +17,7 @@ const styles = theme => ({
     '&:hover, &$focusVisible': {
       zIndex: 1,
       '& $imageBackdrop': {
-        opacity: 0.15
+        opacity: 0.45
       },
       '& $imageTitle': {
         display: 'flex',
@@ -57,13 +57,14 @@ const styles = theme => ({
     right: 0,
     top: 0,
     bottom: 0,
-    backgroundColor: theme.palette.common.black,
+    backgroundColor: theme.palette.primary.contrastText,
     opacity: 0,
     transition: theme.transitions.create('opacity')
   },
   imageTitle: {
     display: 'none',
-    position: 'relative'
+    position: 'relative',
+    fontWeight: 700
   }
 });
 
