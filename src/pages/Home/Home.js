@@ -55,6 +55,11 @@ const Home = ({ classes }) => {
     >
       <Grid item xs={12} sm={12} md={6} className={classes.item}>
         <Zoom in={reState}>
+          <Typography variant="h4" className={classes.header} gutterBottom>
+            Life of Litter
+          </Typography>
+        </Zoom>
+        <Zoom in={reState}>
           <Typography variant="h1" className={classes.headline}>
             Reduce.
           </Typography>
@@ -77,7 +82,7 @@ const Home = ({ classes }) => {
         </Zoom>
       </Grid>
       <Grid item xs={12} sm={12} md={6} className={classes.item}>
-        <div style={{ display: 'flex', bottomMargin: '20px' }}>
+        <div style={{ margin: '10px' }}>
           <Recyclables />
         </div>
         <Button
@@ -86,7 +91,7 @@ const Home = ({ classes }) => {
           component={Link}
           to="/choose-litter"
           color="secondary"
-          style={{ marginTop: 200 }}
+          style={{ marginTop: 275 }}
         >
           Start
         </Button>
