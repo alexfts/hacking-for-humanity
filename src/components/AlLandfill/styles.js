@@ -7,18 +7,17 @@ const styles = theme => ({
     width: '100%'
   },
   header: {
-    // backgroundColor: theme.palette.background.default,
-    // backgroundColor: 'rgba(255, 255, 255, 0.2)',
     backgroundColor: 'transparent',
     color: '#fff',
     display: 'flex',
     justifyContent: 'center',
+    height: 50,
     position: 'absolute',
     margin: 'auto',
     top: '40%',
     left: 0,
     right: 0,
-    width: '70%',
+    width: '60%',
     textAlign: 'center',
     zIndex: 10
   },
@@ -40,24 +39,27 @@ const styles = theme => ({
     textShadow: '2px 3px 5px #353535',
     position: 'absolute',
     bottom: '5%',
-    width: '100%'
+    width: '100%',
+    padding: theme.spacing.unit * 5
   },
   stepBtn: {
     color: '#fff',
-    textShadow: '1px 1px 2px #353535'
+    fontWeight: 700
+    // textShadow: '1px 1px 2px #353535'
   },
 
   buttonContainer: {
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     alignItems: 'center',
     position: 'absolute',
-    bottom: '40%',
+    bottom: '33%',
     width: '100%'
   },
   buttonEnd: {
-    margin: '0 10px'
+    margin: theme.spacing.unit,
+    fontWeight: 700
   }
 });
 
