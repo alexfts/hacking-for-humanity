@@ -125,9 +125,6 @@ class TextMobileStepper extends React.Component {
             <Button component={Link} to="/choose-litter">
               Back to Litter
             </Button>
-            <Button component={Link} to="/choose-method">
-              Select another method
-            </Button>
           </div>
         ) : null}
       </div>
