@@ -9,7 +9,8 @@ const styles = theme => ({
     maxWidth: 525,
     [theme.breakpoints.up('md')]: {
       padding: theme.spacing.unit * 10
-    }
+    },
+    zIndex: 999
   },
   headline: {
     weight: 700,
@@ -21,6 +22,9 @@ const styles = theme => ({
     color: theme.palette.primary.dark,
     fontFamily: 'Sofia, cursive',
     textShadow: '2px 2px #44ffd1'
+  },
+  card: {
+    zIndex: 999
   }
 });
 
