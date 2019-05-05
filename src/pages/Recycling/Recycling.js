@@ -38,7 +38,7 @@ const Recycling = ({ location }) => {
   }
   return (
     <div>
-      Recycling
+      <h2 className={classes.title}>Recycling</h2>
       {name === 'Aluminum' ? <AlRecycling /> : null}
       {/* <Button component={Link} to="/start">
         Unlock other litters!
