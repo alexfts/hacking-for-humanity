@@ -38,8 +38,11 @@ const styles = theme => ({
     background: 'transparent',
     textShadow: '2px 3px 5px #353535',
     position: 'absolute',
+    margin: 'auto',
+    left: 0,
+    right: 0,
     bottom: '5%',
-    width: '100%',
+    width: '80%',
     padding: theme.spacing.unit * 5
   },
   stepBtn: {

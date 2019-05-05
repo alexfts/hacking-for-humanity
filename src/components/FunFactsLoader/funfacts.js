@@ -9,7 +9,7 @@ const FunFacts = ({ location, classes }) => {
   const litter = location.state && location.state.litter;
   const name = location.state && location.state.name;
   const pathname = location.state && location.state.pathname;
-  var Random = funFacts.facts[Math.floor(Math.random() * 13)];
+  var Random = funFacts.facts[Math.floor(Math.random() * 12)];
 
   const [litterState] = useState(true);
 
