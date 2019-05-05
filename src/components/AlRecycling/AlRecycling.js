@@ -20,18 +20,13 @@ const tutorialSteps = [
   },
   {
     label:
-      'The aluminum blocks bales are transported to a processing plant where they are shredded into tiny pieces and taken by the conveyor system into a specialized decoater.',
-    imgPath: '../recyclebackground1.jpg'
-  },
-  {
-    label:
       'After this, they are taken to a holding furnace where they are melted down into ingots, lifted by an overhead careen, and dispatched to the rolling mill. The ingots are then rolled out making thin sheets of aluminum',
-    imgPath: '../recyclebackground1.jpg'
+    imgPath: '../recyclebackground3.jpg'
   },
   {
     label:
-      'They are then repurposed into new Aluminum products, saving 90-95% of the energy used to make a new one!',
-    imgPath: '../recyclebackground1.jpg'
+      'They are then repurposed into new Aluminum products, saving 90-95% of the energy used to make a new one! Make sure to always recycle your Aluminum!',
+    imgPath: '../sunnybackground.jpg'
   }
 ];
 
