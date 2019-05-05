@@ -7,6 +7,18 @@ const styles = theme => ({
     borderRadius: '50%',
     overflow: 'hidden'
   },
+  paper: {
+    width: theme.spacing.unit * 50,
+    backgroundColor: theme.palette.background.paper,
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing.unit * 4,
+    outline: 'none'
+  },
+  modal: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  },
   image: {
     position: 'relative',
     height: 200,
