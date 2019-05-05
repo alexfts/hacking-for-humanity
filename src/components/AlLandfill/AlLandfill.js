@@ -14,18 +14,20 @@ import styles from './styles';
 
 const tutorialSteps = [
   {
-    label: "By not recycling aluminum, it'll have to be remade from scratch.",
-    imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60'
-  },
-  {
     label:
-      'Bauxite ore is mined to create aluminum. The mining causes deforestation, erosion, polluted water sources and a threat to animal life. Recycle your aluminum cans!',
+      "By not recycling aluminum, it'll have to be remade from scratch. That means it'll have to be mined again from bauxite ore.",
     imgPath:
       'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60'
   },
   {
-    label: 'Bali, Indonesia',
+    label:
+      'The mining causes deforestation, erosion, polluted water sources and a threat to animal life.',
+    imgPath:
+      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60'
+  },
+  {
+    label:
+      "There is no limit to how many times aluminum can be recycled. That's why recycling aluminum is such a boom for the environment. Aluminum is considered a sustainable metal, which means it can be recycled again and again with no loss of material.",
     imgPath:
       'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80'
   },
@@ -61,9 +63,10 @@ class TextMobileStepper extends React.Component {
     return (
       <div className={classes.root}>
         <Paper square elevation={0} className={classes.header}>
-          <Typography>{tutorialSteps[activeStep].label}</Typography>
+          <Typography className="label" variant="h6">
+            {tutorialSteps[activeStep].label}
+          </Typography>
         </Paper>
-
         <SwipeableViews
           axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
           index={activeStep}
@@ -82,52 +85,62 @@ class TextMobileStepper extends React.Component {
             </div>
           ))}
         </SwipeableViews>
-
-        {activeStep != 3 ? (
-          <MobileStepper
-            variant="progress"
-            color="secondary"
-            steps={maxSteps}
-            position="static"
-            activeStep={activeStep}
-            className={classes.mobileStepper}
-            nextButton={
-              <Button
-                size="small"
-                onClick={this.handleNext}
-                disabled={activeStep === maxSteps - 1}
-              >
-                Next
-                {theme.direction === 'rtl' ? (
-                  <KeyboardArrowLeft />
-                ) : (
-                  <KeyboardArrowRight />
-                )}
-              </Button>
-            }
-            backButton={
-              <Button
-                size="small"
-                onClick={this.handleBack}
-                disabled={activeStep === 0}
-              >
-                {theme.direction === 'rtl' ? (
-                  <KeyboardArrowRight />
-                ) : (
-                  <KeyboardArrowLeft />
-                )}
-                Back
-              </Button>
-            }
-          />
-        ) : null}
-
+        {/* {activeStep != 3 ? ( */}
+        <MobileStepper
+          variant="progress"
+          color="secondary"
+          steps={maxSteps}
+          position="static"
+          activeStep={activeStep}
+          className={classes.mobileStepper}
+          nextButton={
+            <Button
+              size="small"
+              onClick={this.handleNext}
+              disabled={activeStep === maxSteps - 1}
+            >
+              Next
+              {theme.direction === 'rtl' ? (
+                <KeyboardArrowLeft />
+              ) : (
+                <KeyboardArrowRight />
+              )}
+            </Button>
+          }
+          backButton={
+            <Button
+              size="small"
+              onClick={this.handleBack}
+              disabled={activeStep === 0}
+            >
+              {theme.direction === 'rtl' ? (
+                <KeyboardArrowRight />
+              ) : (
+                <KeyboardArrowLeft />
+              )}
+              Back
+            </Button>
+          }
+        />
+        {/* ) : null} */}
         {activeStep === 3 ? (
           <div className={classes.buttonContainer}>
-            <Button component={Link} to="/choose-litter">
+            <Button
+              className={classes.buttonEnd}
+              component={Link}
+              to="/choose-litter"
+              variant="contained"
+              color="primary"
+            >
               Back to Litter
             </Button>
-            <Button component={Link} to="/choose-method">
+            <Button
+              className={classes.buttonEnd}
+              component={Link}
+              to="/choose-method"
+              variant="contained"
+              color="primary"
+            >
               Select another method
             </Button>
           </div>

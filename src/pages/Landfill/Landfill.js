@@ -40,7 +40,7 @@ const Landfill = ({ classes, location }) => {
 
   return (
     <div className={classes.landfill}>
-      Landfill
+      <h2 className={classes.title}>Landfill</h2>
       {name === 'Aluminum' ? <AlLandfill /> : null}
     </div>
   );
