@@ -4,6 +4,8 @@ import { Button } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import litterData from '../../data/litter.json';
 import styles from './styles';
+import Frown from '@material-ui/icons/MoodBad'
+
 
 const unlockNewItem = () => {
   const unlockedItems = localStorage.getItem('unlockedItems').split(',');
@@ -11,7 +13,7 @@ const unlockNewItem = () => {
   localStorage.setItem('unlockedItems', [...unlockedItems, newItemName]);
 };
 
-const Compost = ({ location }) => {
+const Compost = ({ location, classes }) => {
   if (localStorage.getItem('unlockedItems') === null) {
     localStorage.setItem('unlockedItems', ['Aluminum', 'Compost', 'Paper']);
   }
@@ -30,10 +32,14 @@ const Compost = ({ location }) => {
     }
   }
   return (
-    <div>
-      Compost
-      <Button component={Link} to="/start">
-        Unlock other litters!
+    <div  className={classes.factContainer}>
+      <h2 className={classes.title}>Compost</h2>
+      <p>
+        If you compost Aluminum, it's the same as throwing it away. 
+      </p>
+      <p><Frown/></p>
+      <Button className={classes.title} component={Link} to="/landfill" width="50vw">
+        Next
       </Button>
     </div>
   );
