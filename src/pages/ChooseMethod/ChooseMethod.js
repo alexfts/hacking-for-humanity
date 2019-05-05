@@ -16,11 +16,11 @@ const ChooseMethod = ({ location }) => {
       <Button
         component={Link}
         to={{
-          pathname: '/landfill',
+          pathname: '/funfacts',
           state: {
             litter: litter,
             name: name,
-            method: 'landfill'
+            pathname: '/landfill'
           }
         }}
       >
@@ -29,11 +29,11 @@ const ChooseMethod = ({ location }) => {
       <Button
         component={Link}
         to={{
-          pathname: '/compost',
+          pathname: '/funfacts',
           state: {
             litter: litter,
             name: name,
-            method: 'compost'
+            pathname: '/compost'
           }
         }}
       >
@@ -42,11 +42,11 @@ const ChooseMethod = ({ location }) => {
       <Button
         component={Link}
         to={{
-          pathname: '/recycling',
+          pathname: '/funfacts',
           state: {
             litter: litter,
             name: name,
-            method: 'recycling'
+            pathname: '/recycling'
           }
         }}
       >
