@@ -1,34 +1,24 @@
 const styles = theme => ({
-  method: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    height: '100%',
-    width: '100%'
+  container: {
+    flexGrow: 1,
+    padding: theme.spacing.unit * 5
   },
-  title: {
-    fontSize: '2rem',
-    paddingTop: 30,
-    paddingBottom: 30
+  item: {
+    padding: theme.spacing.unit * 3
   },
-
-  choices: {
-    display: 'flex',
-    flex: 1,
-    justifyContent: 'space-evenly',
-    alignItems: 'center',
-    paddingTop: 30,
-    paddingBottom: 30,
-    height: '100%',
-    width: '100%'
+  img: {
+    margin: theme.spacing.unit * 2
   },
   card: {
     maxWidth: 500,
     width: 250
   },
   media: {
-    height: 200
+    height: 150,
+    backgroundSize: 'contain',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    margin: theme.spacing.unit
   },
   choice: {
     display: 'flex',
