@@ -21,6 +21,9 @@ const ChooseMethod = ({ classes, location }) => {
       <Typography variant="h2" className={classes.title}>
         Where would you put the trash?
       </Typography>
+      {litter && litter.url && (
+        <img src={litter.url} className={classes.img} alt={name} />
+      )}
       <div className={classes.choices}>
         <Card className={classes.card}>
           <CardActionArea

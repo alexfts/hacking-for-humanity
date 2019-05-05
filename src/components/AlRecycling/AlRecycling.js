@@ -15,37 +15,22 @@ import styles from './styles';
 const tutorialSteps = [
   {
     label:
-      'You place the can into the blue bin to be recycled. It gets shipped to a plant and you save ENEERGYYY',
+      'You place the can into the blue bin to be recycled. It gets shipped to a materials recovery facility where they are cleaned, sorted into different metal streams and later compressed into bales.',
     imgPath:
       'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60'
   },
   {
-    label: 'The mixed metals (aluminum and steel cans) are taken to a materials recovery facility where they are cleaned, sorted into different metal streams and later compressed into bales.',
-    imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60'
-  },
-  {
-    label: 'The aluminum blocks bales are later transported to a processing plant. The blocks are then put onto a conveyor that transports them to the shredder. The shredder then cuts the cans into tiny pieces.',
+    label: 'The aluminum blocks bales are transported to a processing plant where they are shredded into tiny pieces and taken by the conveyor system into a specialized decoater.',
     imgPath:
       'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80'
   },
   {
-    label: "The aluminum shreds then are taken by the conveyor system into a specialized decoater.",
+  label: "After this, they are taken to a holding furnace where they are melted down into ingots, lifted by an overhead careen, and dispatched to the rolling mill. The ingots are then rolled out making thin sheets of aluminum",
     imgPath:
       'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60'
   },
   {
-  label: "After this, they are taken to a holding furnace where they are melted down.",
-    imgPath:
-      'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60'
-  },
-  {
-    label: 'The finished ingots are then lifted by an overhead careen from the casting pit. The ingots are then loaded onto queue waiting track to be transported and dispatched to the rolling mill. The ingots are then rolled out making thin sheets of aluminum.',
-    imgPath:
-      'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60'
-  },
-  {
-    label: 'They are then repurposed into new Aluminum products',
+    label: 'They are then repurposed into new Aluminum products, saving 90-95% of the energy used to make a new one!',
     imgPath:
       'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60'
   }
