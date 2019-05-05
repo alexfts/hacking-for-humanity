@@ -10,6 +10,7 @@ const styles = theme => ({
     // backgroundColor: theme.palette.background.default,
     // backgroundColor: 'rgba(255, 255, 255, 0.2)',
     backgroundColor: 'transparent',
+    color: '#fff',
     display: 'flex',
     justifyContent: 'center',
     height: 50,
@@ -27,23 +28,29 @@ const styles = theme => ({
   img: {
     overflow: 'hidden',
     display: 'block',
+    height: '100%',
     width: '100%',
 
     position: 'relative'
   },
-  label: { color: theme.palette.primary.contrastText, textAlign: 'center' },
+  label: {
+    color: '#fff',
+    textAlign: 'center'
+  },
   mobileStepper: {
-    position: 'absolute',
     background: 'transparent',
-    bottom: 0,
+    fontSize: '5rem',
+    position: 'absolute',
+    bottom: '5%',
     width: '100%'
   },
 
   buttonContainer: {
-    position: 'absolute',
     bottom: 0,
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%'
   },
   buttonEnd: {
     color: '#fff'

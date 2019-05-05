@@ -16,18 +16,16 @@ const tutorialSteps = [
   {
     label:
       "By not recycling aluminum, it'll have to be remade from scratch. That means it'll have to be mined again from bauxite ore.",
-    imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60'
+    imgPath: '../miningbackground.jpg'
   },
   {
     label:
       'The mining causes deforestation, erosion, polluted water sources and a threat to animal life.',
-    imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60'
+    imgPath: '../deforestationbackground.jpeg'
   },
   {
     label:
-      "There is no limit to how many times aluminum can be recycled. That's why recycling aluminum is such a boom for the environment. Aluminum is considered a sustainable metal, which means it can be recycled again and again with no loss of material.",
+      "There is *no limit* to how many times aluminum can be recycled! That's why recycling aluminum is such a boom for the environment. As a 'sustainable metal', it can be recycled again and again with no loss of material.",
     imgPath:
       'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80'
   },
@@ -63,7 +61,7 @@ class TextMobileStepper extends React.Component {
     return (
       <div className={classes.root}>
         <Paper square elevation={0} className={classes.header}>
-          <Typography className="label" variant="h6">
+          <Typography className={classes.label} variant="h6">
             {tutorialSteps[activeStep].label}
           </Typography>
         </Paper>
@@ -88,14 +86,15 @@ class TextMobileStepper extends React.Component {
         {/* {activeStep != 3 ? ( */}
         <MobileStepper
           variant="progress"
-          color="secondary"
+          color="default"
           steps={maxSteps}
           position="static"
           activeStep={activeStep}
           className={classes.mobileStepper}
           nextButton={
             <Button
-              size="small"
+              className={classes.stepBtn}
+              size="large"
               onClick={this.handleNext}
               disabled={activeStep === maxSteps - 1}
             >
@@ -109,7 +108,8 @@ class TextMobileStepper extends React.Component {
           }
           backButton={
             <Button
-              size="small"
+              className={classes.stepBtn}
+              size="large"
               onClick={this.handleBack}
               disabled={activeStep === 0}
             >
