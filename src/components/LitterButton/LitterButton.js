@@ -5,7 +5,6 @@ import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 
 const LitterButton = ({ classes, litter, name }) => {
-  console.log(litter);
   return (
     <div className={classes.root}>
       <ButtonBase
@@ -16,7 +15,13 @@ const LitterButton = ({ classes, litter, name }) => {
           width: '100%'
         }}
         component={Link}
-        to="/choose-method"
+        to={{
+          pathname: '/choose-method',
+          state: {
+            litter: litter,
+            name: name
+          }
+        }}
       >
         <span
           className={classes.imageSrc}
