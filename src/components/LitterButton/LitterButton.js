@@ -5,6 +5,9 @@ import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 
 const LitterButton = ({ classes, litter, name }) => {
+  const isUnlocked =
+    localStorage.getItem('unlockedItems') &&
+    localStorage.getItem('unlockedItems').includes(name);
   return (
     <div className={classes.root}>
       <ButtonBase
@@ -22,6 +25,7 @@ const LitterButton = ({ classes, litter, name }) => {
             name: name
           }
         }}
+        disabled={!isUnlocked}
       >
         <span
           className={classes.imageSrc}
