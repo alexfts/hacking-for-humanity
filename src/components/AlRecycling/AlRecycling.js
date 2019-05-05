@@ -87,6 +87,8 @@ class TextMobileStepper extends React.Component {
         {activeStep === 3 ? (
           <div className={classes.buttonContainer}>
             <Button
+              variant="contained"
+              color="primary"
               component={Link}
               to="/choose-litter"
               className={classes.buttonEnd}

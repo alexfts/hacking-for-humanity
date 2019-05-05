@@ -49,6 +49,8 @@ const styles = theme => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    position: 'absolute',
+    bottom: '40%',
     width: '100%'
   },
   buttonEnd: {
