@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@material-ui/core';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles, Typography } from '@material-ui/core';
 import litterData from '../../data/litter.json';
 import styles from './styles';
 import AlRecycling from '../../components/AlRecycling';
@@ -38,7 +38,10 @@ const Recycling = ({ location, classes }) => {
   }
   return (
     <div className={classes.recycling}>
-      <h2 className={classes.title}>Recycling</h2>
+      {/* <h2 className={classes.title}>Recycling</h2> */}
+      <Typography variant="h2" gutterBottom className={classes.title}>
+        Recycling
+      </Typography>
       {name === 'Aluminum' ? <AlRecycling /> : null}
       {/* <Button component={Link} to="/start">
         Unlock other litters!

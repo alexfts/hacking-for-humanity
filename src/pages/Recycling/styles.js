@@ -12,7 +12,8 @@ const styles = theme => ({
     color: '#fff',
     position: 'absolute',
     top: 0,
-    zIndex: 10
+    zIndex: 10,
+    paddingTop: theme.spacing.unit * 5
   }
 });
 

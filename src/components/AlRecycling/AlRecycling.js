@@ -22,18 +22,13 @@ const tutorialSteps = [
   },
   {
     label:
-      'The aluminum blocks bales are transported to a processing plant where they are shredded into tiny pieces and taken by the conveyor system into a specialized decoater.',
-    imgPath: '../recyclebackground1.jpg'
-  },
-  {
-    label:
       'After this, they are taken to a holding furnace where they are melted down into ingots, lifted by an overhead careen, and dispatched to the rolling mill. The ingots are then rolled out making thin sheets of aluminum',
-    imgPath: '../recyclebackground1.jpg'
+    imgPath: '../recyclebackground3.jpg'
   },
   {
     label:
-      'They are then repurposed into new Aluminum products, saving 90-95% of the energy used to make a new one!',
-    imgPath: '../recyclebackground1.jpg'
+      'They are then repurposed into new Aluminum products, saving 90-95% of the energy used to make a new one! Make sure to always recycle your Aluminum!',
+    imgPath: '../sunnybackground.jpg'
   }
 ];
 
@@ -58,11 +53,11 @@ class TextMobileStepper extends React.Component {
     const { classes, theme } = this.props;
     const { activeStep } = this.state;
     const maxSteps = tutorialSteps.length;
-
+    console.log(activeStep);
     return (
       <div className={classes.root}>
         <Paper square elevation={0} className={classes.header}>
-          <Typography className={classes.label} variant="h6">
+          <Typography className={classes.label} variant="h4">
             {tutorialSteps[activeStep].label}
           </Typography>
         </Paper>
@@ -86,17 +81,17 @@ class TextMobileStepper extends React.Component {
           ))}
         </SwipeableViews>
 
-        {activeStep === 3 ? (
+        {activeStep === 2 ? (
           <>
             <div className={classes.buttonContainer}>
               <Button
-                variant="contained"
+                variant="outlined"
                 color="primary"
                 component={Link}
                 to="/choose-litter"
                 className={classes.buttonEnd}
               >
-                Back to Litter
+                Return to Litter
               </Button>
             </div>
             <Snackbar
@@ -136,6 +131,8 @@ class TextMobileStepper extends React.Component {
           className={classes.mobileStepper}
           nextButton={
             <Button
+              variant="contained"
+              color="secondary"
               className={classes.stepBtn}
               size="large"
               onClick={this.handleNext}
@@ -151,6 +148,8 @@ class TextMobileStepper extends React.Component {
           }
           backButton={
             <Button
+              variant="contained"
+              color="secondary"
               className={classes.stepBtn}
               size="large"
               onClick={this.handleBack}
