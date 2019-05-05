@@ -29,16 +29,16 @@ const ChooseLitter = function({ classes }) {
       </Grid>
 
       {litterNames.map(name => (
-        <Grid key={name} item xs={12} sm={12} md={4} className={classes.item}>
-          <Grow
-            key={name}
-            in={litterState}
-            style={{ transformOrigin: '0 0 0' }}
-            {...(litterState ? { timeout: 1700 } : {})}
-          >
+        <Grow
+          key={name}
+          in={litterState}
+          style={{ transformOrigin: '0 0 0' }}
+          {...(litterState ? { timeout: 1700 } : {})}
+        >
+          <Grid item xs={12} sm={12} md={4} className={classes.item}>
             <LitterButton litter={litterStorage[name]} name={name} />
-          </Grow>
-        </Grid>
+          </Grid>
+        </Grow>
       ))}
     </Grid>
   );
