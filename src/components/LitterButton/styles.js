@@ -20,6 +20,7 @@ const styles = theme => ({
         opacity: 0.15
       },
       '& $imageTitle': {
+        display: 'block',
         border: '4px solid currentColor',
         borderRadius: 50
       }
@@ -53,10 +54,11 @@ const styles = theme => ({
     top: 0,
     bottom: 0,
     backgroundColor: theme.palette.common.black,
-    opacity: 0.4,
+    opacity: 0,
     transition: theme.transitions.create('opacity')
   },
   imageTitle: {
+    display: 'none',
     position: 'relative',
     padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 4}px ${theme
       .spacing.unit + 6}px`

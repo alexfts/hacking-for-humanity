@@ -7,7 +7,10 @@ import styles from './styles';
 const LitterButton = ({ classes, litter, name }) => {
   const isUnlocked =
     localStorage.getItem('unlockedItems') &&
-    localStorage.getItem('unlockedItems').includes(name);
+    localStorage
+      .getItem('unlockedItems')
+      .split(',')
+      .includes(name);
   return (
     <div className={classes.root}>
       <ButtonBase
@@ -30,7 +33,9 @@ const LitterButton = ({ classes, litter, name }) => {
         <span
           className={classes.imageSrc}
           style={{
-            backgroundImage: `url(${litter.url})`,
+            backgroundImage: isUnlocked
+              ? `url(${litter.url})`
+              : `url('/lock_grey.png')`,
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain',

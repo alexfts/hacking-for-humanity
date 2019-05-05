@@ -41,22 +41,7 @@
         "Recycling aluminum saves 90-95 percent of the energy needed to make aluminum from scratch",
         "There is no limit to how many times aluminum can be recycled. That's why recycling aluminum is such a boom for the environment. Aluminum is considered a sustainable metal, which means it can be recycled again and again with no loss of material."
       ],
-      "url": "words",
-      "correctMethod": "recycle"
-    },
-    "Plastics": {
-      "recycled": [
-        "The material to be recycled is shipped to the plant and inspected to remove contaminants like paper and food.",
-        "Sorting separates clean material from soiled waste that will need washing.",
-        "The waste is fed into a grinder where it is processed into 'fluff'. Any EPS that is not already clean is washed and dried.",
-        "Heat and friction are used to melt the fluff, removing all the air.",
-        "The melted material is pushed under pressure into a die with small openings and extruded as strands of polystyrene, which are cooled with water and chopped into pellets.",
-        "The pellets are shipped to manufacturers to be used in everything from toys to sun visors to building insulation."
-      ],
-      "landfill": [
-        "Normally, it takes 2-6 weeks in a landfill to get completely decomposed. If we recycle paper items, we can easily save a lot of landfill space, while reducing the energy and virgin material requirements of making non-recycled paper."
-      ],
-      "url": "words",
+      "url": "/paper.png",
       "correctMethod": "recycle"
     },
     "Glass": {
@@ -69,7 +54,7 @@
         "Glass does not degrade through the recycling process, so it can be recycled again and again."
       ],
       "landfill": ["Glass takes [instert] to biodegrade"],
-      "url": "words",
+      "url": "/glass.png",
       "correctMethod": "recycle"
     },
     "Polystyrene": {
@@ -84,6 +69,21 @@
       "landfill": [
         "Recycling aluminum saves 90-95 percent of the energy needed to make aluminum from scratch",
         "There is no limit to how many times aluminum can be recycled. That's why recycling aluminum is such a boom for the environment. Aluminum is considered a sustainable metal, which means it can be recycled again and again with no loss of material."
+      ],
+      "url": "/styrofoam.png",
+      "correctMethod": "recycle"
+    },
+    "Plastics": {
+      "recycled": [
+        "The material to be recycled is shipped to the plant and inspected to remove contaminants like paper and food.",
+        "Sorting separates clean material from soiled waste that will need washing.",
+        "The waste is fed into a grinder where it is processed into 'fluff'. Any EPS that is not already clean is washed and dried.",
+        "Heat and friction are used to melt the fluff, removing all the air.",
+        "The melted material is pushed under pressure into a die with small openings and extruded as strands of polystyrene, which are cooled with water and chopped into pellets.",
+        "The pellets are shipped to manufacturers to be used in everything from toys to sun visors to building insulation."
+      ],
+      "landfill": [
+        "Normally, it takes 2-6 weeks in a landfill to get completely decomposed. If we recycle paper items, we can easily save a lot of landfill space, while reducing the energy and virgin material requirements of making non-recycled paper."
       ],
       "url": "words",
       "correctMethod": "recycle"
