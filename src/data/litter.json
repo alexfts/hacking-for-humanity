@@ -9,7 +9,8 @@
         "Recycling aluminum saves 90-95 percent of the energy needed to make aluminum from scratch",
         "There is no limit to how many times aluminum can be recycled. That's why recycling aluminum is such a boom for the environment. Aluminum is considered a sustainable metal, which means it can be recycled again and again with no loss of material."
       ],
-      "url": "/aluminum.png"
+      "url": "/aluminum.png",
+      "correctMethod": "recycle"
     },
     "Compost": {
       "recycled": [
@@ -21,7 +22,8 @@
       "landfill": [
         "Compost that is buried in a landfill won’t be able to receive oxygen. Instead, it’ll undergo anaerobic decomposition which will produce methane gas. In an aerobic environment, living organisms such as worms can break it down and produce CO2 instead of methane."
       ],
-      "url": "/compostable.png"
+      "url": "/compostable.png",
+      "correctMethod": "compost"
     },
     "Paper": {
       "recycled": [
@@ -39,7 +41,8 @@
         "Recycling aluminum saves 90-95 percent of the energy needed to make aluminum from scratch",
         "There is no limit to how many times aluminum can be recycled. That's why recycling aluminum is such a boom for the environment. Aluminum is considered a sustainable metal, which means it can be recycled again and again with no loss of material."
       ],
-      "url": "words"
+      "url": "words",
+      "correctMethod": "recycle"
     },
     "Plastics": {
       "recycled": [
@@ -53,7 +56,8 @@
       "landfill": [
         "Normally, it takes 2-6 weeks in a landfill to get completely decomposed. If we recycle paper items, we can easily save a lot of landfill space, while reducing the energy and virgin material requirements of making non-recycled paper."
       ],
-      "url": "words"
+      "url": "words",
+      "correctMethod": "recycle"
     },
     "Glass": {
       "recycled": [
@@ -65,7 +69,8 @@
         "Glass does not degrade through the recycling process, so it can be recycled again and again."
       ],
       "landfill": ["Glass takes [instert] to biodegrade"],
-      "url": "words"
+      "url": "words",
+      "correctMethod": "recycle"
     },
     "Polystyrene": {
       "recycled": [
@@ -80,7 +85,8 @@
         "Recycling aluminum saves 90-95 percent of the energy needed to make aluminum from scratch",
         "There is no limit to how many times aluminum can be recycled. That's why recycling aluminum is such a boom for the environment. Aluminum is considered a sustainable metal, which means it can be recycled again and again with no loss of material."
       ],
-      "url": "words"
+      "url": "words",
+      "correctMethod": "recycle"
     },
     "Soft Plastics": {
       "recycled": [
@@ -98,7 +104,8 @@
         "Recycling aluminum saves 90-95 percent of the energy needed to make aluminum from scratch",
         "There is no limit to how many times aluminum can be recycled. That's why recycling aluminum is such a boom for the environment. Aluminum is considered a sustainable metal, which means it can be recycled again and again with no loss of material."
       ],
-      "url": "words"
+      "url": "words",
+      "correctMethod": "landfill"
     }
   }
 }
