@@ -24,25 +24,27 @@ const styles = theme => ({
     textAlign: 'center',
     zIndex: 10
   },
-
-  img: {
-    overflow: 'hidden',
-    display: 'block',
-    height: '100%',
-    width: '100%',
-
-    position: 'relative'
-  },
   label: {
     color: '#fff',
     textAlign: 'center'
   },
+  img: {
+    overflow: 'hidden',
+    display: 'block',
+    position: 'relative',
+    height: '100%',
+    width: '100%'
+  },
+
   mobileStepper: {
-    background: 'transparent',
-    fontSize: '5rem',
+    // background: 'transparent',
+    backgroundColor: 'rgba(0, 0, 0, 0.3)',
     position: 'absolute',
     bottom: '5%',
     width: '100%'
+  },
+  stepBtn: {
+    color: '#fff'
   },
 
   buttonContainer: {

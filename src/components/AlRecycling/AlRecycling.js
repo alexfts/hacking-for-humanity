@@ -20,21 +20,23 @@ const tutorialSteps = [
       'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60'
   },
   {
-    label: 'The aluminum blocks bales are transported to a processing plant where they are shredded into tiny pieces and taken by the conveyor system into a specialized decoater.',
+    label:
+      'The aluminum blocks bales are transported to a processing plant where they are shredded into tiny pieces and taken by the conveyor system into a specialized decoater.',
     imgPath:
       'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80'
   },
   {
-  label: "After this, they are taken to a holding furnace where they are melted down into ingots, lifted by an overhead careen, and dispatched to the rolling mill. The ingots are then rolled out making thin sheets of aluminum",
+    label:
+      'After this, they are taken to a holding furnace where they are melted down into ingots, lifted by an overhead careen, and dispatched to the rolling mill. The ingots are then rolled out making thin sheets of aluminum',
     imgPath:
       'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60'
   },
   {
-    label: 'They are then repurposed into new Aluminum products, saving 90-95% of the energy used to make a new one!',
+    label:
+      'They are then repurposed into new Aluminum products, saving 90-95% of the energy used to make a new one!',
     imgPath:
       'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60'
   }
-
 ];
 
 class TextMobileStepper extends React.Component {
@@ -61,8 +63,10 @@ class TextMobileStepper extends React.Component {
 
     return (
       <div className={classes.root}>
-        <Paper square elevation={0} className={classes.title}>
-          <Typography>{tutorialSteps[activeStep].label}</Typography>
+        <Paper square elevation={0} className={classes.header}>
+          <Typography className={classes.label} variant="h6">
+            {tutorialSteps[activeStep].label}
+          </Typography>
         </Paper>
 
         <SwipeableViews
@@ -93,7 +97,8 @@ class TextMobileStepper extends React.Component {
           className={classes.mobileStepper}
           nextButton={
             <Button
-              size="small"
+              className={classes.stepBtn}
+              size="large"
               onClick={this.handleNext}
               disabled={activeStep === maxSteps - 1}
             >
@@ -107,7 +112,8 @@ class TextMobileStepper extends React.Component {
           }
           backButton={
             <Button
-              size="small"
+              className={classes.stepBtn}
+              size="large"
               onClick={this.handleBack}
               disabled={activeStep === 0}
             >
@@ -123,7 +129,11 @@ class TextMobileStepper extends React.Component {
 
         {activeStep === 3 ? (
           <div className={classes.buttonContainer}>
-            <Button component={Link} to="/choose-litter">
+            <Button
+              component={Link}
+              to="/choose-litter"
+              className={classes.buttonEnd}
+            >
               Back to Litter
             </Button>
           </div>
