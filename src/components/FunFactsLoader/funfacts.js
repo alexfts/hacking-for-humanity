@@ -10,7 +10,9 @@ const FunFacts = props => {
     
     return (
     <div>
+        <p>
         {Random}
+        </p>
     </div>
 );
     }
