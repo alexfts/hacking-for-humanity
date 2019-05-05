@@ -7,6 +7,9 @@ import LitterButton from '../../components/LitterButton';
 import litterData from '../../data/litter.json';
 
 const ChooseLitter = function(props) {
+  if (localStorage.getItem('unlockedItems') === null) {
+    localStorage.setItem('unlockedItems', ['Aluminum', 'Compost', 'Paper']);
+  }
   const litterStorage = litterData.litter;
   const litterNames = Object.keys(litterStorage);
   return (
