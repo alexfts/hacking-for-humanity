@@ -1,7 +1,8 @@
 const styles = theme => ({
   root: {
-    maxWidth: 400,
-    flexGrow: 1
+    // maxWidth: 400,
+    flexGrow: 1,
+    width: '100%'
   },
   header: {
     display: 'flex',
@@ -11,11 +12,13 @@ const styles = theme => ({
     backgroundColor: theme.palette.background.default
   },
   img: {
-    height: 255,
-    display: 'block',
-    maxWidth: 400,
     overflow: 'hidden',
+    display: 'block',
     width: '100%'
+  },
+  buttonContainer: {
+    display: 'flex',
+    justifyContent: 'center'
   }
 });
 

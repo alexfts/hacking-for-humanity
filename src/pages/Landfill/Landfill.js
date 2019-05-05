@@ -13,7 +13,7 @@ const unlockNewItem = () => {
   localStorage.setItem('unlockedItems', [...unlockedItems, newItemName]);
 };
 
-const Landfill = ({ location }) => {
+const Landfill = ({ classes, location }) => {
   if (localStorage.getItem('unlockedItems') === null) {
     localStorage.setItem('unlockedItems', ['Aluminum', 'Compost', 'Paper']);
   }
@@ -31,18 +31,11 @@ const Landfill = ({ location }) => {
       localStorage.setItem('visitedItems', [...visitedItems.split(','), name]);
     }
   }
+
   return (
-    <div className={styles.landfill}>
+    <div className={classes.landfill}>
       Landfill
-      <div className={styles.buttonContainer}>
-        <Button component={Link} to="/choose-litter">
-          Back to Litter
-        </Button>
-        <Button component={Link} to="/choose-method">
-          Select another method
-        </Button>
-      </div>
-      {litter === 'Aluminum' ? <AlLandfill /> : null}
+      {name === 'Aluminum' ? <AlLandfill /> : null}
     </div>
   );
 };

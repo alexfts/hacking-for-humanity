@@ -10,7 +10,8 @@
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.0",
-    "react-spring": "^8.0.20"
+    "react-spring": "^8.0.20",
+    "react-swipeable-views": "^0.13.1"
   },
   "scripts": {
     "start": "react-scripts start",

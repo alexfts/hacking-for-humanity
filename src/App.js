@@ -4,7 +4,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Layout from './routes/Layout';
 import { BrowserRouter } from 'react-router-dom';
 import theme from './theme';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
