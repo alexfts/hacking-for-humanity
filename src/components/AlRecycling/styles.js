@@ -39,7 +39,7 @@ const styles = theme => ({
     top: '50%',
     left: 0,
     right: 0,
-    width: '80%',
+    width: '70%',
     textAlign: 'center',
     zIndex: 10
   },
@@ -60,14 +60,13 @@ const styles = theme => ({
     backgroundColor: 'rgba(0, 0, 0, 0.3)',
     position: 'absolute',
     bottom: '5%',
-    width: '100%'
+    width: '800%'
   },
   stepBtn: {
     color: '#fff'
   },
 
   buttonContainer: {
-    bottom: 0,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',

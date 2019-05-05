@@ -1,30 +1,48 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from '@material-ui/core';
-import { withStyles } from '@material-ui/core/styles';
-import styles from './styles';
+import React, { useState } from 'react';
+import { withStyles, Grid, Slide, Typography } from '@material-ui/core';
+
 import funFacts from '../../data/funfacts.json';
 import Loader from '../Loader';
-import QuoteIcon from '@material-ui/icons/FormatQuote';
+import styles from './styles';
 
 const FunFacts = ({ location, classes }) => {
   const litter = location.state && location.state.litter;
   const name = location.state && location.state.name;
   const pathname = location.state && location.state.pathname;
   var Random = funFacts.facts[Math.floor(Math.random() * 13)];
-  return (
-    <div className={classes.factContainer}>
-      <h1 className={classes.title}>Fun Fact!</h1>
 
-      <p className={classes.fact}>
-        <QuoteIcon />
-        {Random}
-        <QuoteIcon />
-      </p>
-      {litter && name && pathname && (
-        <Loader pathname={pathname} litter={litter} name={name} />
-      )}
-    </div>
+  const [litterState] = useState(true);
+
+  return (
+    <Grid
+      container
+      direction="column"
+      alignItems="center"
+      justify="space-between"
+      className={classes.container}
+    >
+      <Grid item xs={12} className={classes.item}>
+        <Slide in={litterState} direction="down">
+          <Typography variant="h2" gutterBottom className={classes.header}>
+            Fun Fact
+          </Typography>
+        </Slide>
+
+        <Grid item xs={12} className={classes.item}>
+          <Slide in={litterState} direction="up">
+            <Typography variant="h4" gutterBottom className={classes.fact}>
+              "{Random}"
+            </Typography>
+          </Slide>
+        </Grid>
+
+        <Grid item xs={12} className={classes.item}>
+          {litter && name && pathname && (
+            <Loader pathname={pathname} litter={litter} name={name} />
+          )}
+        </Grid>
+      </Grid>
+    </Grid>
   );
 };
 export default withStyles(styles)(FunFacts);

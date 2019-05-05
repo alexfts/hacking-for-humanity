@@ -16,7 +16,7 @@ const tutorialSteps = [
   {
     label:
       "By not recycling aluminum, it'll have to be remade from scratch. That means it'll have to be mined again from bauxite ore.",
-    imgPath: '../miningbackground.jpg'
+    imgPath: '../miningbackground.png'
   },
   {
     label:
@@ -25,14 +25,12 @@ const tutorialSteps = [
   },
   {
     label:
-      "There is *no limit* to how many times aluminum can be recycled! That's why recycling aluminum is such a boom for the environment. As a 'sustainable metal', it can be recycled again and again with no loss of material.",
-    imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80'
+      "There is no limit to how many times aluminum can be recycled! That's why recycling aluminum is such a boom for the environment. As a 'sustainable metal', it can be recycled again and again with no loss of material.",
+    imgPath: '../recyclebackground3.jpg'
   },
   {
-    label: 'NeONBRAND Digital Marketing, Las Vegas, United States',
-    imgPath:
-      'https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60'
+    label: "Don't throw out your aluminum cans! Always recycle them.",
+    imgPath: '../compostbackground.PNG'
   }
 ];
 
@@ -83,6 +81,30 @@ class TextMobileStepper extends React.Component {
             </div>
           ))}
         </SwipeableViews>
+
+        {activeStep === 3 ? (
+          <div className={classes.buttonContainer}>
+            <Button
+              className={classes.buttonEnd}
+              component={Link}
+              to="/choose-litter"
+              // variant="contained"
+              color="primary"
+            >
+              Return to Litter
+            </Button>
+            <Button
+              className={classes.buttonEnd}
+              component={Link}
+              to="/choose-method"
+              // variant="contained"
+              color="primary"
+            >
+              Throw it somewhere else
+            </Button>
+          </div>
+        ) : null}
+
         {/* {activeStep != 3 ? ( */}
         <MobileStepper
           variant="progress"
@@ -123,28 +145,6 @@ class TextMobileStepper extends React.Component {
           }
         />
         {/* ) : null} */}
-        {activeStep === 3 ? (
-          <div className={classes.buttonContainer}>
-            <Button
-              className={classes.buttonEnd}
-              component={Link}
-              to="/choose-litter"
-              variant="contained"
-              color="primary"
-            >
-              Back to Litter
-            </Button>
-            <Button
-              className={classes.buttonEnd}
-              component={Link}
-              to="/choose-method"
-              variant="contained"
-              color="primary"
-            >
-              Select another method
-            </Button>
-          </div>
-        ) : null}
       </div>
     );
   }

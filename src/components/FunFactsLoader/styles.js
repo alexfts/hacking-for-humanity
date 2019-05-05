@@ -1,26 +1,22 @@
 const styles = theme => ({
-root: {
+  container: {
     flexGrow: 1,
+    padding: theme.spacing.unit * 5,
+    height: '100vh'
   },
-title: {
-  textAlign: "center", 
-  color: theme.palette.primary.dark
-},
-factContainer: {
-  height: "100vh",
-  width: "100%",
-  display: "flex",
-  flexDirection: "column",
-  textAlign: "center",
-  justifyContent: "center"
-},
-fact: {
-  width: "50%",
-  margin: "20px auto",
-},
-svg: {
-  fontSize: "20px !important"
-}
-
+  item: {
+    padding: theme.spacing.unit * 3,
+    textAlign: 'center',
+    margin: theme.spacing.unit * 10
+  },
+  header: {
+    weight: 700,
+    color: theme.palette.primary.dark,
+    fontFamily: 'Sofia, cursive'
+  },
+  fact: { maxWidth: 500 },
+  svg: {
+    fontSize: '30px !important'
+  }
 });
 export default styles;
