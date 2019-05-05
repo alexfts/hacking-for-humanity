@@ -1,6 +1,5 @@
 const styles = theme => ({
   landfill: {
-    // backgroundImage: "url('../../images/skynews-food-waste.jpg')",
     display: 'flex',
     flexDirection: 'column',
     flexGrow: 1,
@@ -13,7 +12,8 @@ const styles = theme => ({
     color: '#fff',
     position: 'absolute',
     top: 0,
-    zIndex: 10
+    zIndex: 10,
+    paddingTop: theme.spacing.unit * 5
   }
 });
 

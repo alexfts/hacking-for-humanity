@@ -4,39 +4,13 @@ const styles = theme => ({
     width: '100%'
   },
   header: {
-    display: 'flex',
-    alignItems: 'center',
-    height: 50,
-    paddingLeft: theme.spacing.unit * 4,
-    backgroundColor: theme.palette.background.default
-  },
-  title: {
-    textAlign: 'center',
-    color: theme.palette.primary.dark
-  },
-  factContainer: {
-    height: '100vh',
-    width: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-    textAlign: 'center',
-    justifyContent: 'center'
-  },
-  fact: {
-    width: '50%',
-    margin: '20px auto'
-  },
-
-  header: {
     backgroundColor: 'transparent',
     color: '#fff',
     display: 'flex',
     justifyContent: 'center',
-    height: 50,
-    // paddingLeft: theme.spacing.unit * 4,
     position: 'absolute',
     margin: 'auto',
-    top: '50%',
+    top: '40%',
     left: 0,
     right: 0,
     width: '70%',
@@ -45,25 +19,30 @@ const styles = theme => ({
   },
   label: {
     color: '#fff',
-    textAlign: 'center'
+    textAlign: 'center',
+    textShadow: '2px 3px 5px #353535'
   },
   img: {
     overflow: 'hidden',
     display: 'block',
     position: 'relative',
-    height: '100%',
+    height: '100vh',
     width: '100%'
   },
 
   mobileStepper: {
-    // background: 'transparent',
-    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+    background: 'transparent',
+    textShadow: '2px 3px 5px #353535',
     position: 'absolute',
+    margin: 'auto',
+    left: 0,
+    right: 0,
     bottom: '5%',
-    width: '800%'
+    width: '80%'
   },
   stepBtn: {
-    color: '#fff'
+    color: '#fff',
+    textShadow: '1px 1px 2px #353535'
   },
 
   buttonContainer: {
@@ -73,7 +52,8 @@ const styles = theme => ({
     width: '100%'
   },
   buttonEnd: {
-    color: '#fff'
+    color: '#fff',
+    margin: '0 -10px'
   }
 });
 
