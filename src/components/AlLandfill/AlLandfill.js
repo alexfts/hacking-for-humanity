@@ -54,7 +54,7 @@ class TextMobileStepper extends Component {
   };
 
   render() {
-    const { classes, theme } = this.props;
+    const { classes, theme, litter, name } = this.props;
     const { activeStep } = this.state;
     const maxSteps = tutorialSteps.length;
 
@@ -100,7 +100,13 @@ class TextMobileStepper extends Component {
               variant="outlined"
               className={classes.buttonEnd}
               component={Link}
-              to="/choose-method"
+              to={{
+                pathname: '/choose-method',
+                state: {
+                  litter: litter,
+                  name: name
+                }
+              }}
               // variant="contained"
               color="primary"
             >
