@@ -14,7 +14,8 @@ const styles = theme => ({
       flexDirection: "column",
       textAlign: "center",
       justifyContent: "center",
-      background: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(https://static1.squarespace.com/static/580914a8b8a79b2b7327e3c7/5bfd856f4fa51a145ccc0678/5bfe0bb71ae6cf28edad6882/1543375810519/Coming+out+of+dirt+Small.jpg)"
+      background: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(https://image.shutterstock.com/image-vector/vector-illustration-landfill-landscape-waste-260nw-1188827215.jpg) no-repeat",
+      backgroundSize: "cover"
     },
     fact: {
       width: "50%",
