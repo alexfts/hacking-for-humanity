@@ -1,6 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, withStyles, Typography, Grid, Zoom } from '@material-ui/core';
+import {
+  Button,
+  withStyles,
+  Typography,
+  Grid,
+  Zoom,
+  Card,
+  CardContent,
+  CardActions,
+  TextField
+} from '@material-ui/core';
 import { useTransition, animated, config } from 'react-spring';
 
 import styles from './styles';
@@ -85,20 +95,41 @@ const Home = ({ classes }) => {
         <div style={{ margin: '10px' }}>
           <Recyclables />
         </div>
-        <Button
-          variant="outlined"
-          aria-label="Select your trash"
-          component={Link}
-          to="/choose-litter"
-          color="secondary"
-          style={{ marginTop: 275, zIndex: 999 }}
-        >
-          Start
-        </Button>
+        <Card className={classes.card} style={{ marginTop: 275, zIndex: 999 }}>
+          <CardContent style={{ zIndex: 999 }}>
+            <TextField
+              type="text"
+              fullWidth
+              name="username"
+              className="form-control"
+              placeholder="Username"
+              required
+            />
+            <TextField
+              type="password"
+              fullWidth
+              name="password"
+              className="form-control"
+              placeholder="Password"
+              required
+            />
+          </CardContent>
+          <CardActions>
+            <Button
+              variant="outlined"
+              aria-label="Select your trash"
+              component={Link}
+              to="/choose-litter"
+              color="secondary"
+            >
+              Start
+            </Button>
+          </CardActions>
+        </Card>
       </Grid>
-      <div class="ocean">
-        <div class="wave" />
-        <div class="wave" />
+      <div className={'ocean'}>
+        <div className={'wave'} />
+        <div className={'wave'} />
       </div>
     </Grid>
   );

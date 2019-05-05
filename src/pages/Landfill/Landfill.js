@@ -43,7 +43,9 @@ const Landfill = ({ classes, location }) => {
       <Typography variant="h2" gutterBottom className={classes.title}>
         Landfill
       </Typography>
-      {name === 'Aluminum' ? <AlLandfill /> : null}
+      {name === 'Aluminum' && litter && name ? (
+        <AlLandfill litter={litter} name={name} />
+      ) : null}
     </div>
   );
 };
