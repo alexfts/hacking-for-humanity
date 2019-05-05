@@ -6,7 +6,7 @@ import styles from './styles';
 
 const ChooseMethod = ({ location }) => {
   if (localStorage.getItem('unlockedItems') === null) {
-    localStorage.setItem('unlockedItems', ['Aluminum', 'Food Scraps', 'Paper']);
+    localStorage.setItem('unlockedItems', ['Aluminum']);
   }
   const litter = location.state && location.state.litter;
   const name = location.state && location.state.name;

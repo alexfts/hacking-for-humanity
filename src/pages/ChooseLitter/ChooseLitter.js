@@ -7,7 +7,7 @@ import styles from './styles';
 
 const ChooseLitter = function({ classes }) {
   if (localStorage.getItem('unlockedItems') === null) {
-    localStorage.setItem('unlockedItems', ['Aluminum', 'Food Scraps', 'Paper']);
+    localStorage.setItem('unlockedItems', ['Aluminum']);
   }
   const litterStorage = litterData.litter;
   const litterNames = Object.keys(litterStorage);

@@ -15,7 +15,7 @@ const unlockNewItem = () => {
 
 const Landfill = ({ classes, location }) => {
   if (localStorage.getItem('unlockedItems') === null) {
-    localStorage.setItem('unlockedItems', ['Aluminum', 'Food Scraps', 'Paper']);
+    localStorage.setItem('unlockedItems', ['Aluminum']);
   }
   const litter = location.state && location.state.litter;
   const name = location.state && location.state.name;
@@ -25,16 +25,14 @@ const Landfill = ({ classes, location }) => {
     let visitedItems = localStorage.getItem('visitedItems');
     if (!visitedItems) {
       console.log('nothing visited');
-      //unlockNewItem();
+      unlockNewItem();
       localStorage.setItem('visitedItems', [name]);
     } else {
       visitedItems = visitedItems.split(',');
       console.log(visitedItems, name);
       if (!visitedItems.includes(name)) {
-        if (visitedItems.length >= 2) {
-          console.log('unlocking!', visitedItems, name);
-          unlockNewItem();
-        }
+        console.log('unlocking!', visitedItems, name);
+        unlockNewItem();
         localStorage.setItem('visitedItems', [...visitedItems, name]);
       }
     }

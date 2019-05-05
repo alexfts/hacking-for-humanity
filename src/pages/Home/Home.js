@@ -40,7 +40,7 @@ const Recyclables = () => {
 
 const Home = ({ classes }) => {
   if (localStorage.getItem('unlockedItems') === null) {
-    localStorage.setItem('unlockedItems', ['Aluminum', 'Food Scraps', 'Paper']);
+    localStorage.setItem('unlockedItems', ['Aluminum']);
   }
 
   const [reState] = useState(true);
