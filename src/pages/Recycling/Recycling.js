@@ -14,20 +14,26 @@ const unlockNewItem = () => {
 
 const Recycling = ({ location }) => {
   if (localStorage.getItem('unlockedItems') === null) {
-    localStorage.setItem('unlockedItems', ['Aluminum', 'Compost', 'Paper']);
+    localStorage.setItem('unlockedItems', ['Aluminum']);
   }
   const litter = location.state && location.state.litter;
   const name = location.state && location.state.name;
   const isCorrectMethod = litter && litter.correctMethod === 'recycle';
   if (isCorrectMethod) {
     // ensure we haven't visited this item yet
-    const visitedItems = localStorage.getItem('visitedItems');
+    let visitedItems = localStorage.getItem('visitedItems');
     if (!visitedItems) {
+      console.log('nothing visited');
       unlockNewItem();
       localStorage.setItem('visitedItems', [name]);
-    } else if (!visitedItems.includes(name)) {
-      unlockNewItem();
-      localStorage.setItem('visitedItems', [...visitedItems.split(','), name]);
+    } else {
+      visitedItems = visitedItems.split(',');
+      console.log(visitedItems, name);
+      if (!visitedItems.includes(name)) {
+        console.log('unlocking!', visitedItems, name);
+        unlockNewItem();
+        localStorage.setItem('visitedItems', [...visitedItems, name]);
+      }
     }
   }
   return (

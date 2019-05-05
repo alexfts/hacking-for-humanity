@@ -2,7 +2,8 @@ import { createMuiTheme } from '@material-ui/core/styles';
 
 export default createMuiTheme({
   typography: {
-    useNextVariants: true
+    useNextVariants: true,
+    fontFamily: 'Oxygen, sans-serif'
   },
   palette: {
     primary: {
@@ -17,6 +18,10 @@ export default createMuiTheme({
     },
     background: {
       default: '#daffef'
+    },
+    text: {
+      primary: '#17bebb',
+      secondary: '#23c9ff'
     }
   }
 });

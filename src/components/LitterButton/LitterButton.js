@@ -1,13 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button, ButtonBase, Typography } from '@material-ui/core';
+import { ButtonBase, Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 
 const LitterButton = ({ classes, litter, name }) => {
   const isUnlocked =
     localStorage.getItem('unlockedItems') &&
-    localStorage.getItem('unlockedItems').includes(name);
+    localStorage
+      .getItem('unlockedItems')
+      .split(',')
+      .includes(name);
   return (
     <div className={classes.root}>
       <ButtonBase
@@ -30,19 +33,24 @@ const LitterButton = ({ classes, litter, name }) => {
         <span
           className={classes.imageSrc}
           style={{
-            backgroundImage: `url(${litter.url})`
+            backgroundImage: isUnlocked
+              ? `url(${litter.url})`
+              : `url('/lock_grey.png')`,
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'contain',
+            margin: '25px'
           }}
         />
         <span className={classes.imageBackdrop} />
         <span className={classes.imageButton}>
           <Typography
             component="span"
-            variant="subtitle1"
+            variant="h5"
             color="inherit"
             className={classes.imageTitle}
           >
             {name}
-            <span className={classes.imageMarked} />
           </Typography>
         </span>
       </ButtonBase>

@@ -1,8 +1,7 @@
 const styles = theme => ({
   container: {
     flexGrow: 1,
-    height: '100%',
-    background: theme.palette.primary.light
+    height: '100%'
   },
   item: {
     padding: theme.spacing.unit * 5,
@@ -13,7 +12,9 @@ const styles = theme => ({
     }
   },
   headline: {
-    weight: 700
+    weight: 700,
+    color: theme.palette.primary.dark,
+    fontFamily: 'Sofia, cursive'
   }
 });
 

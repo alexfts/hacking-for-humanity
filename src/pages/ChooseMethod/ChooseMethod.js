@@ -12,7 +12,7 @@ import image from '../../images/skynews-food-waste.jpg';
 
 const ChooseMethod = ({ classes, location }) => {
   if (localStorage.getItem('unlockedItems') === null) {
-    localStorage.setItem('unlockedItems', ['Aluminum', 'Compost', 'Paper']);
+    localStorage.setItem('unlockedItems', ['Aluminum']);
   }
   const litter = location.state && location.state.litter;
   const name = location.state && location.state.name;
@@ -107,6 +107,47 @@ const ChooseMethod = ({ classes, location }) => {
           </CardActionArea>
         </Card>
       </div>
+      {/* <div>
+      <Button
+        component={Link}
+        to={{
+          pathname: '/funfacts',
+          state: {
+            litter: litter,
+            name: name,
+            pathname: '/landfill'
+          }
+        }}
+      >
+        trash
+      </Button>
+      <Button
+        component={Link}
+        to={{
+          pathname: '/funfacts',
+          state: {
+            litter: litter,
+            name: name,
+            pathname: '/compost'
+          }
+        }}
+      >
+        Compost
+      </Button>
+      <Button
+        component={Link}
+        to={{
+          pathname: '/funfacts',
+          state: {
+            litter: litter,
+            name: name,
+            pathname: '/recycling'
+          }
+        }}
+      >
+        Recycling
+      </Button>
+    </div> */}
     </div>
   );
 };

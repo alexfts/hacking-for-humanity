@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, withStyles, Typography, Grid } from '@material-ui/core';
+import { Button, withStyles, Typography, Grid, Zoom } from '@material-ui/core';
 import { useTransition, animated, config } from 'react-spring';
 
 import styles from './styles';
@@ -40,8 +40,11 @@ const Recyclables = () => {
 
 const Home = ({ classes }) => {
   if (localStorage.getItem('unlockedItems') === null) {
-    localStorage.setItem('unlockedItems', ['Aluminum', 'Compost', 'Paper']);
+    localStorage.setItem('unlockedItems', ['Aluminum']);
   }
+
+  const [reState] = useState(true);
+
   return (
     <Grid
       container
@@ -51,9 +54,27 @@ const Home = ({ classes }) => {
       justify="center"
     >
       <Grid item xs={12} sm={12} md={6} className={classes.item}>
-        <Typography variant="h1" className={classes.headline}>
-          Reduce. Reuse. Recycle.
-        </Typography>
+        <Zoom in={reState}>
+          <Typography variant="h1" className={classes.headline}>
+            Reduce.
+          </Typography>
+        </Zoom>
+        <Zoom
+          in={reState}
+          style={{ transitionDelay: reState ? '500ms' : '0ms' }}
+        >
+          <Typography variant="h1" className={classes.headline}>
+            Reuse.
+          </Typography>
+        </Zoom>
+        <Zoom
+          in={reState}
+          style={{ transitionDelay: reState ? '1000ms' : '0ms' }}
+        >
+          <Typography variant="h1" className={classes.headline}>
+            Recycle.
+          </Typography>
+        </Zoom>
       </Grid>
       <Grid item xs={12} sm={12} md={6} className={classes.item}>
         <div style={{ display: 'flex', bottomMargin: '20px' }}>
@@ -70,6 +91,10 @@ const Home = ({ classes }) => {
           Start
         </Button>
       </Grid>
+      <div class="ocean">
+        <div class="wave" />
+        <div class="wave" />
+      </div>
     </Grid>
   );
 };

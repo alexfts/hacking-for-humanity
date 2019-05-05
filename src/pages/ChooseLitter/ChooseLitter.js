@@ -1,22 +1,43 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button, Grid, ButtonBase } from '@material-ui/core';
-import { withStyles } from '@material-ui/core/styles';
-import styles from './styles';
-import LitterButton from '../../components/LitterButton';
-import litterData from '../../data/litter.json';
+import React, { useState } from 'react';
+import { withStyles, Grid, Typography, Grow, Slide } from '@material-ui/core';
 
-const ChooseLitter = function(props) {
+import litterData from '../../data/litter.json';
+import LitterButton from '../../components/LitterButton';
+import styles from './styles';
+
+const ChooseLitter = function({ classes }) {
   if (localStorage.getItem('unlockedItems') === null) {
-    localStorage.setItem('unlockedItems', ['Aluminum', 'Compost', 'Paper']);
+    localStorage.setItem('unlockedItems', ['Aluminum']);
   }
   const litterStorage = litterData.litter;
   const litterNames = Object.keys(litterStorage);
+
+  const [litterState] = useState(true);
+
   return (
-    <Grid container background-color="secondary">
+    <Grid
+      container
+      direction="row"
+      alignItems="center"
+      justify="center"
+      className={classes.container}
+    >
+      <Grid item xs={12} sm={12} md={4} className={classes.item}>
+        <Slide in={litterState} direction="right">
+          <Typography variant="h2">Choose a litter.</Typography>
+        </Slide>
+      </Grid>
+
       {litterNames.map(name => (
-        <Grid item key={name}>
-          <LitterButton litter={litterStorage[name]} name={name} />
+        <Grid key={name} item xs={12} sm={12} md={4} className={classes.item}>
+          <Grow
+            key={name}
+            in={litterState}
+            style={{ transformOrigin: '0 0 0' }}
+            {...(litterState ? { timeout: 1700 } : {})}
+          >
+            <LitterButton litter={litterStorage[name]} name={name} />
+          </Grow>
         </Grid>
       ))}
     </Grid>
