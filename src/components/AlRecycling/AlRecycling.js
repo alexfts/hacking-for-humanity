@@ -8,9 +8,11 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
+import Star from '@material-ui/icons/Stars';
 import SwipeableViews from 'react-swipeable-views';
 
 import styles from './styles';
+import { Snackbar, SnackbarContent } from '@material-ui/core';
 
 const tutorialSteps = [
   {
@@ -85,17 +87,44 @@ class TextMobileStepper extends React.Component {
         </SwipeableViews>
 
         {activeStep === 3 ? (
-          <div className={classes.buttonContainer}>
-            <Button
-              variant="contained"
-              color="primary"
-              component={Link}
-              to="/choose-litter"
-              className={classes.buttonEnd}
+          <>
+            <div className={classes.buttonContainer}>
+              <Button
+                variant="contained"
+                color="primary"
+                component={Link}
+                to="/choose-litter"
+                className={classes.buttonEnd}
+              >
+                Back to Litter
+              </Button>
+            </div>
+            <Snackbar
+              anchorOrigin={{
+                vertical: 'top',
+                horizontal: 'right'
+              }}
+              open={true}
+              autoHideDuration={6000}
             >
-              Back to Litter
-            </Button>
-          </div>
+              <SnackbarContent
+                message={
+                  <span
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center'
+                    }}
+                  >
+                    <Star />
+                    &nbsp;
+                    {'New Item Unlocked!'}
+                  </span>
+                }
+                style={{ backgroundColor: '#daffef', color: '#242038' }}
+              />
+            </Snackbar>
+          </>
         ) : null}
 
         <MobileStepper
