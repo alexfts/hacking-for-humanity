@@ -8,6 +8,12 @@ const styles = theme => ({
     justifyContent: 'center',
     height: '100%',
     width: '100%'
+  },
+  title: {
+    color: '#fff',
+    position: 'absolute',
+    top: 0,
+    zIndex: 10
   }
 });
 

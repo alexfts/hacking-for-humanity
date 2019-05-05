@@ -1,3 +1,5 @@
+import { isAbsolute } from 'path';
+
 const styles = theme => ({
   root: {
     display: 'flex',
@@ -17,45 +19,49 @@ const styles = theme => ({
     // paddingLeft: theme.spacing.unit * 4,
     position: 'absolute',
     margin: 'auto',
-    top: '50%',
+    top: '40%',
     left: 0,
     right: 0,
-    width: '80%',
+    width: '70%',
     textAlign: 'center',
     zIndex: 10
   },
   label: {
     color: '#fff',
-    textAlign: 'center'
+    textAlign: 'center',
+    textShadow: '2px 3px 5px #353535'
   },
   img: {
     overflow: 'hidden',
     display: 'block',
     position: 'relative',
-    height: '100%',
+    height: '100vh',
     width: '100%'
   },
 
   mobileStepper: {
-    // background: 'transparent',
-    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+    background: 'transparent',
+    textShadow: '2px 3px 5px #353535',
     position: 'absolute',
     bottom: '5%',
     width: '100%'
   },
   stepBtn: {
-    color: '#fff'
+    color: '#fff',
+    textShadow: '1px 1px 2px #353535'
   },
 
   buttonContainer: {
-    bottom: 0,
     display: 'flex',
+    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    position: 'absolute',
+    bottom: '40%',
     width: '100%'
   },
   buttonEnd: {
-    color: '#fff'
+    margin: '0 10px'
   }
 });
 
