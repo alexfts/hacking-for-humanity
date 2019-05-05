@@ -16,7 +16,7 @@ const styles = theme => ({
     justifyContent: 'center',
     alignItems: 'center',
     background:
-      'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(https://image.shutterstock.com/image-vector/vector-illustration-landfill-landscape-waste-260nw-1188827215.jpg) no-repeat',
+      'url(../compostbackground.png) no-repeat',
     backgroundSize: 'cover'
   },
   correctFactContainer: {
