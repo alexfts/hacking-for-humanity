@@ -37,7 +37,7 @@ const Recycling = ({ location, classes }) => {
     }
   }
   return (
-    <div>
+    <div className={classes.recycling}>
       <h2 className={classes.title}>Recycling</h2>
       {name === 'Aluminum' ? <AlRecycling /> : null}
       {/* <Button component={Link} to="/start">

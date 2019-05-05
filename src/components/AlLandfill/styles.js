@@ -1,5 +1,3 @@
-import { isAbsolute } from 'path';
-
 const styles = theme => ({
   root: {
     display: 'flex',
@@ -15,8 +13,6 @@ const styles = theme => ({
     color: '#fff',
     display: 'flex',
     justifyContent: 'center',
-    height: 50,
-    // paddingLeft: theme.spacing.unit * 4,
     position: 'absolute',
     margin: 'auto',
     top: '40%',
