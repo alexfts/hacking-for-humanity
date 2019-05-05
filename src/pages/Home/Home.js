@@ -95,13 +95,16 @@ const Home = ({ classes }) => {
         <div style={{ margin: '10px' }}>
           <Recyclables />
         </div>
-        <Card className={classes.card} style={{ marginTop: 275, zIndex: 999 }}>
-          <CardContent style={{ zIndex: 999 }}>
+        <Card
+          className={classes.card}
+          style={{ borderRadius: 0, marginTop: 275, zIndex: 999 }}
+        >
+          <CardContent style={{ zIndex: 999, paddingTop: 5 }}>
             <TextField
               type="text"
               fullWidth
               name="username"
-              className="form-control"
+              className={classes.textField}
               placeholder="Username"
               required
             />
@@ -109,18 +112,18 @@ const Home = ({ classes }) => {
               type="password"
               fullWidth
               name="password"
-              className="form-control"
+              className={classes.textField}
               placeholder="Password"
               required
             />
           </CardContent>
-          <CardActions>
+          <CardActions className={classes.btnContainer}>
             <Button
-              variant="outlined"
+              variant="contained"
               aria-label="Select your trash"
               component={Link}
               to="/choose-litter"
-              color="secondary"
+              color="primary"
             >
               Start
             </Button>

@@ -10,7 +10,8 @@ const styles = theme => ({
     [theme.breakpoints.up('md')]: {
       padding: theme.spacing.unit * 10
     },
-    zIndex: 999
+    zIndex: 999,
+    marginLeft: -40
   },
   headline: {
     weight: 700,
@@ -25,6 +26,14 @@ const styles = theme => ({
   },
   card: {
     zIndex: 999
+  },
+  textField: {
+    margin: '10px 0'
+  },
+  btnContainer: {
+    justifyContent: 'center',
+    paddingTop: 0,
+    paddingBottom: 10
   }
 });
 
