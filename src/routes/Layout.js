@@ -6,6 +6,7 @@ import ChooseLitter from '../pages/ChooseLitter';
 import Compost from '../pages/Compost';
 import Recycling from '../pages/Recycling';
 import Landfill from '../pages/Landfill';
+import Funfacts from '../components/FunFactsLoader';
 
 export default () => (
   <Switch>
@@ -15,6 +16,7 @@ export default () => (
     <Route exact path="/compost" component={Compost} />
     <Route exact path="/landfill" component={Landfill} />
     <Route exact path="/recycling" component={Recycling} />
+    <Route exact path="/funfacts" component={Funfacts} />
     <Redirect to="/home" />
   </Switch>
 );

@@ -4,32 +4,33 @@ import { Button, ButtonBase, Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 
-const images = [
-  {
-    url: '/aluminum.png',
-    title: 'Aluminum',
-    width: '40%'
-  }
-];
-
-const LitterButton = ({ classes }) => {
-  const image = images[0];
-
+const LitterButton = ({ classes, litter, name }) => {
+  const isUnlocked =
+    localStorage.getItem('unlockedItems') &&
+    localStorage.getItem('unlockedItems').includes(name);
   return (
     <div className={classes.root}>
       <ButtonBase
         focusRipple
-        key={image.title}
         className={classes.image}
         focusVisibleClassName={classes.focusVisible}
         style={{
-          width: image.width
+          width: '100%'
         }}
+        component={Link}
+        to={{
+          pathname: '/choose-method',
+          state: {
+            litter: litter,
+            name: name
+          }
+        }}
+        disabled={!isUnlocked}
       >
         <span
           className={classes.imageSrc}
           style={{
-            backgroundImage: `url(${image.url})`
+            backgroundImage: `url(${litter.url})`
           }}
         />
         <span className={classes.imageBackdrop} />
@@ -40,7 +41,7 @@ const LitterButton = ({ classes }) => {
             color="inherit"
             className={classes.imageTitle}
           >
-            {image.title}
+            {name}
             <span className={classes.imageMarked} />
           </Typography>
         </span>
