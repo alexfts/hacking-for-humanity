@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from '@material-ui/core';
-import { withStyles } from '@material-ui/core/styles';
+import { Button, Typography, withStyles } from '@material-ui/core';
+import Frown from '@material-ui/icons/SentimentVeryDissatisfied';
+import { exportNamedDeclaration } from '@babel/types';
+
 import litterData from '../../data/litter.json';
 import styles from './styles';
-import Frown from '@material-ui/icons/MoodBad';
-import { exportNamedDeclaration } from '@babel/types';
 
 const unlockNewItem = () => {
   const unlockedItems = localStorage.getItem('unlockedItems').split(',');
@@ -39,19 +39,24 @@ const Compost = ({ location, classes }) => {
   }
   return (
     <div className={classes.factContainer}>
-      <h2 className={classes.title}>Compost</h2>
+      <Typography variant="h2" gutterBottom className={classes.header}>
+        Compost
+      </Typography>
+      {/* <h2 className={classes.title}>Compost</h2> */}
       {litter && litter.url && (
         <img src={litter.url} className={classes.img} alt={name} />
       )}
-      <p className={classes.fact}>
+      {/* <p className={classes.fact}> */}
+      <Typography variant="h4" className={classes.fact}>
         If you compost this, it's the same as throwing it away. During the
         composting process, items are sorted, and everything non-compostable is
         sent to the landfill.
-      </p>
-      <p>
-        <Frown />
-      </p>
+      </Typography>
+      {/* </p> */}
+
       <Button
+        variant="outlined"
+        color="primary"
         className={classes.title}
         component={Link}
         to={{
@@ -62,9 +67,9 @@ const Compost = ({ location, classes }) => {
             method: 'landfill'
           }
         }}
-        width="50vw"
       >
-        See what happens in landfill
+        see what happens in landfill &nbsp;
+        <Frown />
       </Button>
     </div>
   );

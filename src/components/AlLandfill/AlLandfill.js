@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import MobileStepper from '@material-ui/core/MobileStepper';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
+import {
+  withStyles,
+  MobileStepper,
+  Paper,
+  Typography,
+  Button
+} from '@material-ui/core';
 import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
@@ -34,7 +36,7 @@ const tutorialSteps = [
   }
 ];
 
-class TextMobileStepper extends React.Component {
+class TextMobileStepper extends Component {
   state = {
     activeStep: 0
   };
@@ -52,14 +54,14 @@ class TextMobileStepper extends React.Component {
   };
 
   render() {
-    const { classes, theme } = this.props;
+    const { classes, theme, litter, name } = this.props;
     const { activeStep } = this.state;
     const maxSteps = tutorialSteps.length;
 
     return (
       <div className={classes.root}>
         <Paper square elevation={0} className={classes.header}>
-          <Typography className={classes.label} variant="h6">
+          <Typography className={classes.label} variant="h4">
             {tutorialSteps[activeStep].label}
           </Typography>
         </Paper>
@@ -85,6 +87,7 @@ class TextMobileStepper extends React.Component {
         {activeStep === 3 ? (
           <div className={classes.buttonContainer}>
             <Button
+              variant="outlined"
               className={classes.buttonEnd}
               component={Link}
               to="/choose-litter"
@@ -94,13 +97,20 @@ class TextMobileStepper extends React.Component {
               Return to Litter
             </Button>
             <Button
+              variant="outlined"
               className={classes.buttonEnd}
               component={Link}
-              to="/choose-method"
+              to={{
+                pathname: '/choose-method',
+                state: {
+                  litter: litter,
+                  name: name
+                }
+              }}
               // variant="contained"
               color="primary"
             >
-              Throw it somewhere else
+              Throw it Elsewhere
             </Button>
           </div>
         ) : null}
@@ -115,6 +125,8 @@ class TextMobileStepper extends React.Component {
           className={classes.mobileStepper}
           nextButton={
             <Button
+              variant="contained"
+              color="secondary"
               className={classes.stepBtn}
               size="large"
               onClick={this.handleNext}
@@ -130,6 +142,8 @@ class TextMobileStepper extends React.Component {
           }
           backButton={
             <Button
+              variant="contained"
+              color="secondary"
               className={classes.stepBtn}
               size="large"
               onClick={this.handleBack}

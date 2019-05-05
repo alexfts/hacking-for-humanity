@@ -3,8 +3,7 @@ const styles = theme => ({
     flexGrow: 1
   },
   title: {
-    textAlign: 'center',
-    color: theme.palette.primary.dark
+    fontWeight: 700
   },
   factContainer: {
     color: 'white',
@@ -13,10 +12,9 @@ const styles = theme => ({
     display: 'flex',
     flexDirection: 'column',
     textAlign: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     alignItems: 'center',
-    background:
-      'url(../compostbackground.png) no-repeat',
+    background: 'url(/compostbackground.png) no-repeat',
     backgroundSize: 'cover'
   },
   correctFactContainer: {
@@ -31,9 +29,11 @@ const styles = theme => ({
     background: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) no-repeat',
     backgroundSize: 'cover'
   },
+  header: { color: '#fff', fontWeight: 700 },
   fact: {
     width: '50%',
-    margin: '20px auto'
+    // margin: '20px auto',
+    color: '#fff'
   },
   img: {
     width: '10%'
