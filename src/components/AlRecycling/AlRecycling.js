@@ -116,7 +116,7 @@ class TextMobileStepper extends React.Component {
                     {'New Item Unlocked!'}
                   </span>
                 }
-                style={{ backgroundColor: '#daffef', color: '#242038' }}
+                style={{ backgroundColor: '#44ffd1', color: '#242038' }}
               />
             </Snackbar>
           </>

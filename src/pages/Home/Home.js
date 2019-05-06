@@ -119,11 +119,11 @@ const Home = ({ classes }) => {
           </CardContent>
           <CardActions className={classes.btnContainer}>
             <Button
-              variant="contained"
+              variant="outlined"
               aria-label="Select your trash"
               component={Link}
               to="/choose-litter"
-              color="primary"
+              color="secondary"
             >
               Start
             </Button>
