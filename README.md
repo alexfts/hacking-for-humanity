@@ -14,7 +14,9 @@ Our group learned a lot about where ones trash actually travels. It was surprisi
 
 React, Material UI, and Sketch (for the icons)
 
-## `npm start`
+## Run
+
+`npm start`
 
 Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -22,6 +24,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## Authors
 
 - **Alex Fetisova** - [GitHub](https://github.com/alexfts) | [LinkedIn](https://www.linkedin.com/in/fetisova/)
-- **Jennifer Lam** - [GitHub](https://github.com/nejmal) | [LinkedIn](https://www.linkedin.com/in/jenniferlam-/)
+- **Jen Lam** - [GitHub](https://github.com/nejmal) | [LinkedIn](https://www.linkedin.com/in/jenniferlam-/)
 - **Jenna Pegg** - [GitHub](https://github.com/jennapegg) | [LinkedIn](https://www.linkedin.com/in/jenna-pegg/)
 - **Jennifer Yiu** - [GitHub](https://github.com/jenjjy) | [LinkedIn](https://www.linkedin.com/in/jennifer-yiu)
