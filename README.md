@@ -24,6 +24,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## Authors
 
 - **Alex Fetisova** - [GitHub](https://github.com/alexfts) | [LinkedIn](https://www.linkedin.com/in/fetisova/)
-- **Jen Lam** - [GitHub](https://github.com/nejmal) | [LinkedIn](https://www.linkedin.com/in/jenniferlam-/)
+- **Jen Lam** - [GitHub](https://github.com/agalcalledjen) | [LinkedIn](https://www.linkedin.com/in/agalcalledjen/)
 - **Jenna Pegg** - [GitHub](https://github.com/jennapegg) | [LinkedIn](https://www.linkedin.com/in/jenna-pegg/)
 - **Jennifer Yiu** - [GitHub](https://github.com/jenjjy) | [LinkedIn](https://www.linkedin.com/in/jennifer-yiu)
